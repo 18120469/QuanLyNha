@@ -14,7 +14,7 @@ namespace QuanLyNha
     {
         public login()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
     }
