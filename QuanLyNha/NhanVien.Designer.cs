@@ -143,6 +143,7 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -303,11 +304,11 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(18, 53);
+            this.dataGridView3.Location = new System.Drawing.Point(3, 96);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(322, 398);
+            this.dataGridView3.Size = new System.Drawing.Size(346, 354);
             this.dataGridView3.TabIndex = 1;
             // 
             // label4
@@ -692,6 +693,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.button7);
             this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.dataGridView3);
             this.panel5.Controls.Add(this.label10);
@@ -713,11 +715,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(88, 12);
+            this.label8.Location = new System.Drawing.Point(95, 10);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 19);
+            this.label8.Size = new System.Drawing.Size(205, 19);
             this.label8.TabIndex = 0;
-            this.label8.Text = "danh sách nhà quản lý";
+            this.label8.Text = "Danh Sách Nhà Phụ Trách";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // tabPage3
             // 
@@ -1257,6 +1260,15 @@
             this.label36.TabIndex = 24;
             this.label36.Text = "số điện thoại";
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(256, 52);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(93, 27);
+            this.button7.TabIndex = 31;
+            this.button7.Text = "Xem";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1413,5 +1425,6 @@
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Button button7;
     }
 }
