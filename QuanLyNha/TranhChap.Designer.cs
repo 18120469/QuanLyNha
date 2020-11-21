@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -184,17 +184,6 @@
             this.label188 = new System.Windows.Forms.Label();
             this.label179 = new System.Windows.Forms.Label();
             this.label180 = new System.Windows.Forms.Label();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.button42 = new System.Windows.Forms.Button();
-            this.textBox102 = new System.Windows.Forms.TextBox();
-            this.label191 = new System.Windows.Forms.Label();
-            this.label192 = new System.Windows.Forms.Label();
-            this.textBox103 = new System.Windows.Forms.TextBox();
-            this.label193 = new System.Windows.Forms.Label();
-            this.label194 = new System.Windows.Forms.Label();
-            this.textBox104 = new System.Windows.Forms.TextBox();
-            this.textBox105 = new System.Windows.Forms.TextBox();
-            this.label195 = new System.Windows.Forms.Label();
             this.panel38 = new System.Windows.Forms.Panel();
             this.button43 = new System.Windows.Forms.Button();
             this.radioButton23 = new System.Windows.Forms.RadioButton();
@@ -835,7 +824,6 @@
             this.panel60.SuspendLayout();
             this.panel61.SuspendLayout();
             this.panel62.SuspendLayout();
-            this.panel37.SuspendLayout();
             this.panel38.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -2094,7 +2082,6 @@
             this.tabPage4.Controls.Add(this.panel36);
             this.tabPage4.Controls.Add(this.label179);
             this.tabPage4.Controls.Add(this.label180);
-            this.tabPage4.Controls.Add(this.panel37);
             this.tabPage4.Controls.Add(this.panel38);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
@@ -2110,7 +2097,7 @@
             this.panel36.Controls.Add(this.panel60);
             this.panel36.Controls.Add(this.panel61);
             this.panel36.Controls.Add(this.panel62);
-            this.panel36.Location = new System.Drawing.Point(899, 55);
+            this.panel36.Location = new System.Drawing.Point(626, 52);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(647, 562);
             this.panel36.TabIndex = 44;
@@ -2365,7 +2352,7 @@
             // 
             this.label179.AutoSize = true;
             this.label179.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label179.Location = new System.Drawing.Point(408, 22);
+            this.label179.Location = new System.Drawing.Point(244, 22);
             this.label179.Name = "label179";
             this.label179.Size = new System.Drawing.Size(120, 27);
             this.label179.TabIndex = 39;
@@ -2375,112 +2362,11 @@
             // 
             this.label180.AutoSize = true;
             this.label180.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label180.Location = new System.Drawing.Point(1180, 22);
+            this.label180.Location = new System.Drawing.Point(909, 22);
             this.label180.Name = "label180";
             this.label180.Size = new System.Drawing.Size(80, 27);
             this.label180.TabIndex = 38;
             this.label180.Text = "Admin";
-            // 
-            // panel37
-            // 
-            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel37.Controls.Add(this.button42);
-            this.panel37.Controls.Add(this.textBox102);
-            this.panel37.Controls.Add(this.label191);
-            this.panel37.Controls.Add(this.label192);
-            this.panel37.Controls.Add(this.textBox103);
-            this.panel37.Controls.Add(this.label193);
-            this.panel37.Controls.Add(this.label194);
-            this.panel37.Controls.Add(this.textBox104);
-            this.panel37.Controls.Add(this.textBox105);
-            this.panel37.Controls.Add(this.label195);
-            this.panel37.Location = new System.Drawing.Point(450, 49);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(367, 502);
-            this.panel37.TabIndex = 36;
-            // 
-            // button42
-            // 
-            this.button42.AutoSize = true;
-            this.button42.Location = new System.Drawing.Point(134, 304);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(115, 37);
-            this.button42.TabIndex = 38;
-            this.button42.Text = "thay đổi";
-            this.button42.UseVisualStyleBackColor = true;
-            // 
-            // textBox102
-            // 
-            this.textBox102.Location = new System.Drawing.Point(182, 62);
-            this.textBox102.Name = "textBox102";
-            this.textBox102.Size = new System.Drawing.Size(163, 22);
-            this.textBox102.TabIndex = 34;
-            // 
-            // label191
-            // 
-            this.label191.AutoSize = true;
-            this.label191.Location = new System.Drawing.Point(19, 70);
-            this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(90, 16);
-            this.label191.TabIndex = 33;
-            this.label191.Text = "tên tài khoản";
-            // 
-            // label192
-            // 
-            this.label192.AutoSize = true;
-            this.label192.Location = new System.Drawing.Point(148, 13);
-            this.label192.Name = "label192";
-            this.label192.Size = new System.Drawing.Size(125, 16);
-            this.label192.TabIndex = 32;
-            this.label192.Text = "thông tin tài khoản";
-            // 
-            // textBox103
-            // 
-            this.textBox103.Location = new System.Drawing.Point(182, 115);
-            this.textBox103.Name = "textBox103";
-            this.textBox103.Size = new System.Drawing.Size(163, 22);
-            this.textBox103.TabIndex = 21;
-            // 
-            // label193
-            // 
-            this.label193.AutoSize = true;
-            this.label193.Location = new System.Drawing.Point(19, 123);
-            this.label193.Name = "label193";
-            this.label193.Size = new System.Drawing.Size(66, 16);
-            this.label193.TabIndex = 20;
-            this.label193.Text = "mật khẩu";
-            // 
-            // label194
-            // 
-            this.label194.AutoSize = true;
-            this.label194.Location = new System.Drawing.Point(19, 175);
-            this.label194.Name = "label194";
-            this.label194.Size = new System.Drawing.Size(93, 16);
-            this.label194.TabIndex = 22;
-            this.label194.Text = "mật khẩu mới";
-            // 
-            // textBox104
-            // 
-            this.textBox104.Location = new System.Drawing.Point(182, 222);
-            this.textBox104.Name = "textBox104";
-            this.textBox104.Size = new System.Drawing.Size(163, 22);
-            this.textBox104.TabIndex = 25;
-            // 
-            // textBox105
-            // 
-            this.textBox105.Location = new System.Drawing.Point(182, 167);
-            this.textBox105.Name = "textBox105";
-            this.textBox105.Size = new System.Drawing.Size(163, 22);
-            this.textBox105.TabIndex = 23;
-            // 
-            // label195
-            // 
-            this.label195.AutoSize = true;
-            this.label195.Location = new System.Drawing.Point(19, 230);
-            this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(65, 16);
-            this.label195.TabIndex = 24;
-            this.label195.Text = "xác nhận";
             // 
             // panel38
             // 
@@ -2502,9 +2388,9 @@
             this.panel38.Controls.Add(this.textBox109);
             this.panel38.Controls.Add(this.textBox110);
             this.panel38.Controls.Add(this.label203);
-            this.panel38.Location = new System.Drawing.Point(5, 49);
+            this.panel38.Location = new System.Drawing.Point(67, 70);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(443, 502);
+            this.panel38.Size = new System.Drawing.Size(443, 544);
             this.panel38.TabIndex = 35;
             // 
             // button43
@@ -4393,33 +4279,33 @@
             // 
             // dataGridView11
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView11.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView11.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView11.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView11.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView11.Location = new System.Drawing.Point(6, 94);
             this.dataGridView11.Name = "dataGridView11";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView11.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView11.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridView11.RowHeadersWidth = 51;
             this.dataGridView11.RowTemplate.Height = 24;
             this.dataGridView11.Size = new System.Drawing.Size(782, 385);
@@ -8549,8 +8435,6 @@
             this.panel61.PerformLayout();
             this.panel62.ResumeLayout(false);
             this.panel62.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
             this.panel38.ResumeLayout(false);
             this.panel38.PerformLayout();
             this.tabPage5.ResumeLayout(false);
@@ -8984,17 +8868,6 @@
         private System.Windows.Forms.Label label178;
         private System.Windows.Forms.Label label179;
         private System.Windows.Forms.Label label180;
-        private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.TextBox textBox102;
-        private System.Windows.Forms.Label label191;
-        private System.Windows.Forms.Label label192;
-        private System.Windows.Forms.TextBox textBox103;
-        private System.Windows.Forms.Label label193;
-        private System.Windows.Forms.Label label194;
-        private System.Windows.Forms.TextBox textBox104;
-        private System.Windows.Forms.TextBox textBox105;
-        private System.Windows.Forms.Label label195;
         private System.Windows.Forms.Panel panel38;
         private System.Windows.Forms.Button button43;
         private System.Windows.Forms.RadioButton radioButton23;
