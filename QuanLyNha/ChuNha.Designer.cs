@@ -74,7 +74,7 @@
             this.tabDangTin.Controls.Add(this.tabPage1);
             this.tabDangTin.Controls.Add(this.tabLSGD);
             this.tabDangTin.Controls.Add(this.tabQLNhaDang);
-            this.tabDangTin.Location = new System.Drawing.Point(0, 7);
+            this.tabDangTin.Location = new System.Drawing.Point(0, 12);
             this.tabDangTin.Name = "tabDangTin";
             this.tabDangTin.SelectedIndex = 0;
             this.tabDangTin.Size = new System.Drawing.Size(800, 475);
