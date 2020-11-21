@@ -891,6 +891,7 @@
             // 
             // panel5
             // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.button17);
             this.panel5.Controls.Add(this.textBox21);
             this.panel5.Controls.Add(this.label47);
@@ -1092,6 +1093,7 @@
             // 
             // panel6
             // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.button10);
             this.panel6.Controls.Add(this.textBox26);
             this.panel6.Controls.Add(this.label58);
@@ -1147,6 +1149,7 @@
             // 
             // panel8
             // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.button16);
             this.panel8.Controls.Add(this.textBox27);
             this.panel8.Controls.Add(this.label61);
@@ -1348,6 +1351,7 @@
             // 
             // panel9
             // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.button15);
             this.panel9.Controls.Add(this.textBox34);
             this.panel9.Controls.Add(this.label71);
