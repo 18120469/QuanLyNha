@@ -54,12 +54,7 @@
             this.lb_tenTieuDe = new System.Windows.Forms.Label();
             this.tabLSGD = new System.Windows.Forms.TabPage();
             this.groupBoxLSGD = new System.Windows.Forms.GroupBox();
-            this.lbnvpt = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbSoTienGiaoDich = new System.Windows.Forms.Label();
-            this.lbNgayGiaoDich = new System.Windows.Forms.Label();
-            this.lbht = new System.Windows.Forms.Label();
-            this.lbMaHopDong = new System.Windows.Forms.Label();
             this.tabQLNhaDang = new System.Windows.Forms.TabPage();
             this.lbDanhSachNhaDang = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -103,6 +98,12 @@
             this.labelSDTCN = new System.Windows.Forms.Label();
             this.labelDiaChi = new System.Windows.Forms.Label();
             this.labelTenCN = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
@@ -115,6 +116,7 @@
             this.tabThongtincanhan.SuspendLayout();
             this.groupBoxTTTK.SuspendLayout();
             this.groupBoxTTCN.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabDangTin
@@ -347,6 +349,7 @@
             // 
             // tabLSGD
             // 
+            this.tabLSGD.Controls.Add(this.panel1);
             this.tabLSGD.Controls.Add(this.groupBoxLSGD);
             this.tabLSGD.Location = new System.Drawing.Point(4, 25);
             this.tabLSGD.Name = "tabLSGD";
@@ -358,74 +361,24 @@
             // 
             // groupBoxLSGD
             // 
-            this.groupBoxLSGD.Controls.Add(this.lbnvpt);
             this.groupBoxLSGD.Controls.Add(this.dataGridView1);
-            this.groupBoxLSGD.Controls.Add(this.lbSoTienGiaoDich);
-            this.groupBoxLSGD.Controls.Add(this.lbNgayGiaoDich);
-            this.groupBoxLSGD.Controls.Add(this.lbht);
-            this.groupBoxLSGD.Controls.Add(this.lbMaHopDong);
             this.groupBoxLSGD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxLSGD.Location = new System.Drawing.Point(149, 47);
+            this.groupBoxLSGD.Location = new System.Drawing.Point(100, 125);
             this.groupBoxLSGD.Name = "groupBoxLSGD";
             this.groupBoxLSGD.Size = new System.Drawing.Size(1040, 404);
             this.groupBoxLSGD.TabIndex = 5;
             this.groupBoxLSGD.TabStop = false;
             this.groupBoxLSGD.Text = "Lịch sử giao dịch";
             // 
-            // lbnvpt
-            // 
-            this.lbnvpt.AutoSize = true;
-            this.lbnvpt.Location = new System.Drawing.Point(792, 39);
-            this.lbnvpt.Name = "lbnvpt";
-            this.lbnvpt.Size = new System.Drawing.Size(186, 25);
-            this.lbnvpt.TabIndex = 9;
-            this.lbnvpt.Text = "Nhân viên phụ trách";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(84, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(894, 298);
+            this.dataGridView1.Size = new System.Drawing.Size(1004, 348);
             this.dataGridView1.TabIndex = 8;
-            // 
-            // lbSoTienGiaoDich
-            // 
-            this.lbSoTienGiaoDich.AutoSize = true;
-            this.lbSoTienGiaoDich.Location = new System.Drawing.Point(607, 39);
-            this.lbSoTienGiaoDich.Name = "lbSoTienGiaoDich";
-            this.lbSoTienGiaoDich.Size = new System.Drawing.Size(156, 25);
-            this.lbSoTienGiaoDich.TabIndex = 7;
-            this.lbSoTienGiaoDich.Text = "Số tiền giao dịch";
-            // 
-            // lbNgayGiaoDich
-            // 
-            this.lbNgayGiaoDich.AutoSize = true;
-            this.lbNgayGiaoDich.Location = new System.Drawing.Point(447, 39);
-            this.lbNgayGiaoDich.Name = "lbNgayGiaoDich";
-            this.lbNgayGiaoDich.Size = new System.Drawing.Size(141, 25);
-            this.lbNgayGiaoDich.TabIndex = 6;
-            this.lbNgayGiaoDich.Text = "Ngày giao dịch";
-            // 
-            // lbht
-            // 
-            this.lbht.AutoSize = true;
-            this.lbht.Location = new System.Drawing.Point(304, 39);
-            this.lbht.Name = "lbht";
-            this.lbht.Size = new System.Drawing.Size(94, 25);
-            this.lbht.TabIndex = 5;
-            this.lbht.Text = "Hình thức";
-            // 
-            // lbMaHopDong
-            // 
-            this.lbMaHopDong.AutoSize = true;
-            this.lbMaHopDong.Location = new System.Drawing.Point(121, 39);
-            this.lbMaHopDong.Name = "lbMaHopDong";
-            this.lbMaHopDong.Size = new System.Drawing.Size(127, 25);
-            this.lbMaHopDong.TabIndex = 4;
-            this.lbMaHopDong.Text = "Mã hợp đồng";
             // 
             // tabQLNhaDang
             // 
@@ -832,6 +785,70 @@
             this.labelTenCN.TabIndex = 0;
             this.labelTenCN.Text = "Tên chủ nhà";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.label50);
+            this.panel1.Controls.Add(this.radioButton12);
+            this.panel1.Controls.Add(this.radioButton11);
+            this.panel1.Location = new System.Drawing.Point(100, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1040, 94);
+            this.panel1.TabIndex = 6;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(15, 15);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(135, 17);
+            this.label50.TabIndex = 61;
+            this.label50.Text = "Các Loại Hợp Đồng:";
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Checked = true;
+            this.radioButton12.Location = new System.Drawing.Point(206, 13);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(117, 21);
+            this.radioButton12.TabIndex = 60;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "hợp đồng bán";
+            this.radioButton12.UseVisualStyleBackColor = true;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(206, 40);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(121, 21);
+            this.radioButton11.TabIndex = 59;
+            this.radioButton11.Text = "hợp đồng thuê";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(206, 67);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(95, 21);
+            this.radioButton1.TabIndex = 62;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Cả hai loại";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(511, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 27);
+            this.button1.TabIndex = 63;
+            this.button1.Text = "Tìm Kiếm";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // ChuNha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -847,7 +864,6 @@
             this.gb_ttcoban.PerformLayout();
             this.tabLSGD.ResumeLayout(false);
             this.groupBoxLSGD.ResumeLayout(false);
-            this.groupBoxLSGD.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabQLNhaDang.ResumeLayout(false);
             this.tabQLNhaDang.PerformLayout();
@@ -859,6 +875,8 @@
             this.groupBoxTTTK.PerformLayout();
             this.groupBoxTTCN.ResumeLayout(false);
             this.groupBoxTTCN.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -891,12 +909,7 @@
         private System.Windows.Forms.Label lb_tenTieuDe;
         private System.Windows.Forms.TabPage tabLSGD;
         private System.Windows.Forms.GroupBox groupBoxLSGD;
-        private System.Windows.Forms.Label lbnvpt;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lbSoTienGiaoDich;
-        private System.Windows.Forms.Label lbNgayGiaoDich;
-        private System.Windows.Forms.Label lbht;
-        private System.Windows.Forms.Label lbMaHopDong;
         private System.Windows.Forms.TabPage tabQLNhaDang;
         private System.Windows.Forms.Label lbDanhSachNhaDang;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -940,5 +953,11 @@
         private System.Windows.Forms.Label labelSDTCN;
         private System.Windows.Forms.Label labelDiaChi;
         private System.Windows.Forms.Label labelTenCN;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton radioButton11;
     }
 }
