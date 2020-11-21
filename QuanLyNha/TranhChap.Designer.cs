@@ -6009,14 +6009,14 @@
             this.panel63.Controls.Add(this.dataGridView8);
             this.panel63.Controls.Add(this.label192);
             this.panel63.Controls.Add(this.label193);
-            this.panel63.Location = new System.Drawing.Point(807, 46);
+            this.panel63.Location = new System.Drawing.Point(765, 46);
             this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(469, 571);
+            this.panel63.Size = new System.Drawing.Size(533, 571);
             this.panel63.TabIndex = 44;
             // 
             // button77
             // 
-            this.button77.Location = new System.Drawing.Point(311, 61);
+            this.button77.Location = new System.Drawing.Point(413, 61);
             this.button77.Name = "button77";
             this.button77.Size = new System.Drawing.Size(93, 27);
             this.button77.TabIndex = 31;
@@ -6034,11 +6034,11 @@
             // dataGridView8
             // 
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(3, 96);
+            this.dataGridView8.Location = new System.Drawing.Point(16, 99);
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.RowHeadersWidth = 51;
             this.dataGridView8.RowTemplate.Height = 24;
-            this.dataGridView8.Size = new System.Drawing.Size(461, 354);
+            this.dataGridView8.Size = new System.Drawing.Size(500, 354);
             this.dataGridView8.TabIndex = 1;
             // 
             // label192
@@ -6346,7 +6346,7 @@
             // 
             this.label333.AutoSize = true;
             this.label333.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label333.Location = new System.Drawing.Point(1004, 16);
+            this.label333.Location = new System.Drawing.Point(961, 16);
             this.label333.Name = "label333";
             this.label333.Size = new System.Drawing.Size(139, 27);
             this.label333.TabIndex = 12;
