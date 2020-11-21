@@ -428,6 +428,14 @@
             this.textBox142 = new System.Windows.Forms.TextBox();
             this.label271 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.button42 = new System.Windows.Forms.Button();
+            this.radioButton21 = new System.Windows.Forms.RadioButton();
+            this.label144 = new System.Windows.Forms.Label();
+            this.radioButton22 = new System.Windows.Forms.RadioButton();
+            this.radioButton25 = new System.Windows.Forms.RadioButton();
+            this.groupBoxLSGD = new System.Windows.Forms.GroupBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label272 = new System.Windows.Forms.Label();
             this.label273 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
@@ -451,6 +459,14 @@
             this.label280 = new System.Windows.Forms.Label();
             this.label281 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.button73 = new System.Windows.Forms.Button();
+            this.radioButton26 = new System.Windows.Forms.RadioButton();
+            this.label155 = new System.Windows.Forms.Label();
+            this.radioButton27 = new System.Windows.Forms.RadioButton();
+            this.radioButton28 = new System.Windows.Forms.RadioButton();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.label282 = new System.Windows.Forms.Label();
             this.label288 = new System.Windows.Forms.Label();
             this.panel53 = new System.Windows.Forms.Panel();
@@ -537,6 +553,12 @@
             this.panel57 = new System.Windows.Forms.Panel();
             this.label321 = new System.Windows.Forms.Label();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.panel63 = new System.Windows.Forms.Panel();
+            this.button77 = new System.Windows.Forms.Button();
+            this.textBox102 = new System.Windows.Forms.TextBox();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.label192 = new System.Windows.Forms.Label();
+            this.label193 = new System.Windows.Forms.Label();
             this.panel58 = new System.Windows.Forms.Panel();
             this.button68 = new System.Windows.Forms.Button();
             this.button69 = new System.Windows.Forms.Button();
@@ -778,28 +800,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.loainha = new System.Windows.Forms.ComboBox();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.button42 = new System.Windows.Forms.Button();
-            this.radioButton21 = new System.Windows.Forms.RadioButton();
-            this.label144 = new System.Windows.Forms.Label();
-            this.radioButton22 = new System.Windows.Forms.RadioButton();
-            this.radioButton25 = new System.Windows.Forms.RadioButton();
-            this.groupBoxLSGD = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.button73 = new System.Windows.Forms.Button();
-            this.radioButton26 = new System.Windows.Forms.RadioButton();
-            this.label155 = new System.Windows.Forms.Label();
-            this.radioButton27 = new System.Windows.Forms.RadioButton();
-            this.radioButton28 = new System.Windows.Forms.RadioButton();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.panel63 = new System.Windows.Forms.Panel();
-            this.button77 = new System.Windows.Forms.Button();
-            this.textBox102 = new System.Windows.Forms.TextBox();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.label192 = new System.Windows.Forms.Label();
-            this.label193 = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -857,8 +857,14 @@
             this.panel50.SuspendLayout();
             this.panel51.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.groupBoxLSGD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.panel52.SuspendLayout();
             this.tabPage10.SuspendLayout();
+            this.panel40.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel53.SuspendLayout();
             this.tabPage11.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -871,6 +877,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
             this.panel57.SuspendLayout();
             this.tabPage13.SuspendLayout();
+            this.panel63.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.panel58.SuspendLayout();
             this.panel45.SuspendLayout();
             this.panel69.SuspendLayout();
@@ -900,14 +908,6 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.groupBoxLSGD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.panel40.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.panel63.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage1
@@ -4757,6 +4757,91 @@
             this.tabPage9.Text = "9";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
+            // panel37
+            // 
+            this.panel37.Controls.Add(this.button42);
+            this.panel37.Controls.Add(this.radioButton21);
+            this.panel37.Controls.Add(this.label144);
+            this.panel37.Controls.Add(this.radioButton22);
+            this.panel37.Controls.Add(this.radioButton25);
+            this.panel37.Location = new System.Drawing.Point(598, 55);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(708, 88);
+            this.panel37.TabIndex = 13;
+            // 
+            // button42
+            // 
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.Location = new System.Drawing.Point(490, 49);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(106, 27);
+            this.button42.TabIndex = 63;
+            this.button42.Text = "Tìm Kiếm";
+            this.button42.UseVisualStyleBackColor = true;
+            // 
+            // radioButton21
+            // 
+            this.radioButton21.AutoSize = true;
+            this.radioButton21.Location = new System.Drawing.Point(206, 67);
+            this.radioButton21.Name = "radioButton21";
+            this.radioButton21.Size = new System.Drawing.Size(96, 20);
+            this.radioButton21.TabIndex = 62;
+            this.radioButton21.TabStop = true;
+            this.radioButton21.Text = "Cả hai loại";
+            this.radioButton21.UseVisualStyleBackColor = true;
+            // 
+            // label144
+            // 
+            this.label144.AutoSize = true;
+            this.label144.Location = new System.Drawing.Point(15, 15);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(136, 16);
+            this.label144.TabIndex = 61;
+            this.label144.Text = "Các Loại Hợp Đồng:";
+            // 
+            // radioButton22
+            // 
+            this.radioButton22.AutoSize = true;
+            this.radioButton22.Checked = true;
+            this.radioButton22.Location = new System.Drawing.Point(206, 13);
+            this.radioButton22.Name = "radioButton22";
+            this.radioButton22.Size = new System.Drawing.Size(118, 20);
+            this.radioButton22.TabIndex = 60;
+            this.radioButton22.TabStop = true;
+            this.radioButton22.Text = "hợp đồng bán";
+            this.radioButton22.UseVisualStyleBackColor = true;
+            // 
+            // radioButton25
+            // 
+            this.radioButton25.AutoSize = true;
+            this.radioButton25.Location = new System.Drawing.Point(206, 40);
+            this.radioButton25.Name = "radioButton25";
+            this.radioButton25.Size = new System.Drawing.Size(122, 20);
+            this.radioButton25.TabIndex = 59;
+            this.radioButton25.Text = "hợp đồng thuê";
+            this.radioButton25.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxLSGD
+            // 
+            this.groupBoxLSGD.Controls.Add(this.dataGridView3);
+            this.groupBoxLSGD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxLSGD.Location = new System.Drawing.Point(598, 149);
+            this.groupBoxLSGD.Name = "groupBoxLSGD";
+            this.groupBoxLSGD.Size = new System.Drawing.Size(708, 415);
+            this.groupBoxLSGD.TabIndex = 12;
+            this.groupBoxLSGD.TabStop = false;
+            this.groupBoxLSGD.Text = "Lịch sử giao dịch";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(18, 41);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(1004, 348);
+            this.dataGridView3.TabIndex = 8;
+            // 
             // label272
             // 
             this.label272.AutoSize = true;
@@ -4984,6 +5069,91 @@
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "10";
             this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // panel40
+            // 
+            this.panel40.Controls.Add(this.button73);
+            this.panel40.Controls.Add(this.radioButton26);
+            this.panel40.Controls.Add(this.label155);
+            this.panel40.Controls.Add(this.radioButton27);
+            this.panel40.Controls.Add(this.radioButton28);
+            this.panel40.Location = new System.Drawing.Point(618, 56);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(688, 96);
+            this.panel40.TabIndex = 13;
+            // 
+            // button73
+            // 
+            this.button73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button73.Location = new System.Drawing.Point(511, 60);
+            this.button73.Name = "button73";
+            this.button73.Size = new System.Drawing.Size(106, 27);
+            this.button73.TabIndex = 63;
+            this.button73.Text = "Tìm Kiếm";
+            this.button73.UseVisualStyleBackColor = true;
+            // 
+            // radioButton26
+            // 
+            this.radioButton26.AutoSize = true;
+            this.radioButton26.Location = new System.Drawing.Point(206, 67);
+            this.radioButton26.Name = "radioButton26";
+            this.radioButton26.Size = new System.Drawing.Size(96, 20);
+            this.radioButton26.TabIndex = 62;
+            this.radioButton26.TabStop = true;
+            this.radioButton26.Text = "Cả hai loại";
+            this.radioButton26.UseVisualStyleBackColor = true;
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Location = new System.Drawing.Point(15, 15);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(136, 16);
+            this.label155.TabIndex = 61;
+            this.label155.Text = "Các Loại Hợp Đồng:";
+            // 
+            // radioButton27
+            // 
+            this.radioButton27.AutoSize = true;
+            this.radioButton27.Checked = true;
+            this.radioButton27.Location = new System.Drawing.Point(206, 13);
+            this.radioButton27.Name = "radioButton27";
+            this.radioButton27.Size = new System.Drawing.Size(118, 20);
+            this.radioButton27.TabIndex = 60;
+            this.radioButton27.TabStop = true;
+            this.radioButton27.Text = "hợp đồng bán";
+            this.radioButton27.UseVisualStyleBackColor = true;
+            // 
+            // radioButton28
+            // 
+            this.radioButton28.AutoSize = true;
+            this.radioButton28.Location = new System.Drawing.Point(206, 40);
+            this.radioButton28.Name = "radioButton28";
+            this.radioButton28.Size = new System.Drawing.Size(122, 20);
+            this.radioButton28.TabIndex = 59;
+            this.radioButton28.Text = "hợp đồng thuê";
+            this.radioButton28.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.dataGridView4);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(618, 150);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(688, 414);
+            this.groupBox7.TabIndex = 12;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Lịch sử giao dịch";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(18, 41);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersWidth = 51;
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(1004, 348);
+            this.dataGridView4.TabIndex = 8;
             // 
             // label282
             // 
@@ -5830,6 +6000,64 @@
             this.tabPage13.TabIndex = 12;
             this.tabPage13.Text = "13";
             this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // panel63
+            // 
+            this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel63.Controls.Add(this.button77);
+            this.panel63.Controls.Add(this.textBox102);
+            this.panel63.Controls.Add(this.dataGridView8);
+            this.panel63.Controls.Add(this.label192);
+            this.panel63.Controls.Add(this.label193);
+            this.panel63.Location = new System.Drawing.Point(807, 46);
+            this.panel63.Name = "panel63";
+            this.panel63.Size = new System.Drawing.Size(469, 571);
+            this.panel63.TabIndex = 44;
+            // 
+            // button77
+            // 
+            this.button77.Location = new System.Drawing.Point(311, 61);
+            this.button77.Name = "button77";
+            this.button77.Size = new System.Drawing.Size(93, 27);
+            this.button77.TabIndex = 31;
+            this.button77.Text = "Xem";
+            this.button77.UseVisualStyleBackColor = true;
+            // 
+            // textBox102
+            // 
+            this.textBox102.Enabled = false;
+            this.textBox102.Location = new System.Drawing.Point(140, 464);
+            this.textBox102.Name = "textBox102";
+            this.textBox102.Size = new System.Drawing.Size(59, 22);
+            this.textBox102.TabIndex = 30;
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Location = new System.Drawing.Point(3, 96);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.RowHeadersWidth = 51;
+            this.dataGridView8.RowTemplate.Height = 24;
+            this.dataGridView8.Size = new System.Drawing.Size(461, 354);
+            this.dataGridView8.TabIndex = 1;
+            // 
+            // label192
+            // 
+            this.label192.AutoSize = true;
+            this.label192.Location = new System.Drawing.Point(14, 472);
+            this.label192.Name = "label192";
+            this.label192.Size = new System.Drawing.Size(87, 16);
+            this.label192.TabIndex = 29;
+            this.label192.Text = "tổng số nhà:";
+            // 
+            // label193
+            // 
+            this.label193.AutoSize = true;
+            this.label193.Location = new System.Drawing.Point(95, 10);
+            this.label193.Name = "label193";
+            this.label193.Size = new System.Drawing.Size(176, 16);
+            this.label193.TabIndex = 0;
+            this.label193.Text = "Danh Sách Nhà Phụ Trách";
             // 
             // panel58
             // 
@@ -8174,234 +8402,6 @@
             this.loainha.TabIndex = 0;
             this.loainha.Text = "Tất cả";
             // 
-            // panel37
-            // 
-            this.panel37.Controls.Add(this.button42);
-            this.panel37.Controls.Add(this.radioButton21);
-            this.panel37.Controls.Add(this.label144);
-            this.panel37.Controls.Add(this.radioButton22);
-            this.panel37.Controls.Add(this.radioButton25);
-            this.panel37.Location = new System.Drawing.Point(598, 55);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(708, 88);
-            this.panel37.TabIndex = 13;
-            // 
-            // button42
-            // 
-            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button42.Location = new System.Drawing.Point(490, 49);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(106, 27);
-            this.button42.TabIndex = 63;
-            this.button42.Text = "Tìm Kiếm";
-            this.button42.UseVisualStyleBackColor = true;
-            // 
-            // radioButton21
-            // 
-            this.radioButton21.AutoSize = true;
-            this.radioButton21.Location = new System.Drawing.Point(206, 67);
-            this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(96, 20);
-            this.radioButton21.TabIndex = 62;
-            this.radioButton21.TabStop = true;
-            this.radioButton21.Text = "Cả hai loại";
-            this.radioButton21.UseVisualStyleBackColor = true;
-            // 
-            // label144
-            // 
-            this.label144.AutoSize = true;
-            this.label144.Location = new System.Drawing.Point(15, 15);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(136, 16);
-            this.label144.TabIndex = 61;
-            this.label144.Text = "Các Loại Hợp Đồng:";
-            // 
-            // radioButton22
-            // 
-            this.radioButton22.AutoSize = true;
-            this.radioButton22.Checked = true;
-            this.radioButton22.Location = new System.Drawing.Point(206, 13);
-            this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(118, 20);
-            this.radioButton22.TabIndex = 60;
-            this.radioButton22.TabStop = true;
-            this.radioButton22.Text = "hợp đồng bán";
-            this.radioButton22.UseVisualStyleBackColor = true;
-            // 
-            // radioButton25
-            // 
-            this.radioButton25.AutoSize = true;
-            this.radioButton25.Location = new System.Drawing.Point(206, 40);
-            this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(122, 20);
-            this.radioButton25.TabIndex = 59;
-            this.radioButton25.Text = "hợp đồng thuê";
-            this.radioButton25.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxLSGD
-            // 
-            this.groupBoxLSGD.Controls.Add(this.dataGridView3);
-            this.groupBoxLSGD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxLSGD.Location = new System.Drawing.Point(598, 149);
-            this.groupBoxLSGD.Name = "groupBoxLSGD";
-            this.groupBoxLSGD.Size = new System.Drawing.Size(708, 415);
-            this.groupBoxLSGD.TabIndex = 12;
-            this.groupBoxLSGD.TabStop = false;
-            this.groupBoxLSGD.Text = "Lịch sử giao dịch";
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(18, 41);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(1004, 348);
-            this.dataGridView3.TabIndex = 8;
-            // 
-            // panel40
-            // 
-            this.panel40.Controls.Add(this.button73);
-            this.panel40.Controls.Add(this.radioButton26);
-            this.panel40.Controls.Add(this.label155);
-            this.panel40.Controls.Add(this.radioButton27);
-            this.panel40.Controls.Add(this.radioButton28);
-            this.panel40.Location = new System.Drawing.Point(618, 56);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(688, 96);
-            this.panel40.TabIndex = 13;
-            // 
-            // button73
-            // 
-            this.button73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button73.Location = new System.Drawing.Point(511, 60);
-            this.button73.Name = "button73";
-            this.button73.Size = new System.Drawing.Size(106, 27);
-            this.button73.TabIndex = 63;
-            this.button73.Text = "Tìm Kiếm";
-            this.button73.UseVisualStyleBackColor = true;
-            // 
-            // radioButton26
-            // 
-            this.radioButton26.AutoSize = true;
-            this.radioButton26.Location = new System.Drawing.Point(206, 67);
-            this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(96, 20);
-            this.radioButton26.TabIndex = 62;
-            this.radioButton26.TabStop = true;
-            this.radioButton26.Text = "Cả hai loại";
-            this.radioButton26.UseVisualStyleBackColor = true;
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Location = new System.Drawing.Point(15, 15);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(136, 16);
-            this.label155.TabIndex = 61;
-            this.label155.Text = "Các Loại Hợp Đồng:";
-            // 
-            // radioButton27
-            // 
-            this.radioButton27.AutoSize = true;
-            this.radioButton27.Checked = true;
-            this.radioButton27.Location = new System.Drawing.Point(206, 13);
-            this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(118, 20);
-            this.radioButton27.TabIndex = 60;
-            this.radioButton27.TabStop = true;
-            this.radioButton27.Text = "hợp đồng bán";
-            this.radioButton27.UseVisualStyleBackColor = true;
-            // 
-            // radioButton28
-            // 
-            this.radioButton28.AutoSize = true;
-            this.radioButton28.Location = new System.Drawing.Point(206, 40);
-            this.radioButton28.Name = "radioButton28";
-            this.radioButton28.Size = new System.Drawing.Size(122, 20);
-            this.radioButton28.TabIndex = 59;
-            this.radioButton28.Text = "hợp đồng thuê";
-            this.radioButton28.UseVisualStyleBackColor = true;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.dataGridView4);
-            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(618, 150);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(688, 414);
-            this.groupBox7.TabIndex = 12;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Lịch sử giao dịch";
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(18, 41);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(1004, 348);
-            this.dataGridView4.TabIndex = 8;
-            // 
-            // panel63
-            // 
-            this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel63.Controls.Add(this.button77);
-            this.panel63.Controls.Add(this.textBox102);
-            this.panel63.Controls.Add(this.dataGridView8);
-            this.panel63.Controls.Add(this.label192);
-            this.panel63.Controls.Add(this.label193);
-            this.panel63.Location = new System.Drawing.Point(807, 46);
-            this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(469, 508);
-            this.panel63.TabIndex = 44;
-            // 
-            // button77
-            // 
-            this.button77.Location = new System.Drawing.Point(311, 61);
-            this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(93, 27);
-            this.button77.TabIndex = 31;
-            this.button77.Text = "Xem";
-            this.button77.UseVisualStyleBackColor = true;
-            // 
-            // textBox102
-            // 
-            this.textBox102.Enabled = false;
-            this.textBox102.Location = new System.Drawing.Point(140, 464);
-            this.textBox102.Name = "textBox102";
-            this.textBox102.Size = new System.Drawing.Size(59, 22);
-            this.textBox102.TabIndex = 30;
-            // 
-            // dataGridView8
-            // 
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(3, 96);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.RowHeadersWidth = 51;
-            this.dataGridView8.RowTemplate.Height = 24;
-            this.dataGridView8.Size = new System.Drawing.Size(461, 354);
-            this.dataGridView8.TabIndex = 1;
-            // 
-            // label192
-            // 
-            this.label192.AutoSize = true;
-            this.label192.Location = new System.Drawing.Point(14, 472);
-            this.label192.Name = "label192";
-            this.label192.Size = new System.Drawing.Size(87, 16);
-            this.label192.TabIndex = 29;
-            this.label192.Text = "tổng số nhà:";
-            // 
-            // label193
-            // 
-            this.label193.AutoSize = true;
-            this.label193.Location = new System.Drawing.Point(95, 10);
-            this.label193.Name = "label193";
-            this.label193.Size = new System.Drawing.Size(176, 16);
-            this.label193.TabIndex = 0;
-            this.label193.Text = "Danh Sách Nhà Phụ Trách";
-            // 
             // TranhChap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -8510,10 +8510,18 @@
             this.panel51.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.groupBoxLSGD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.panel52.ResumeLayout(false);
             this.panel52.PerformLayout();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
+            this.panel40.ResumeLayout(false);
+            this.panel40.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.panel53.ResumeLayout(false);
             this.panel53.PerformLayout();
             this.tabPage11.ResumeLayout(false);
@@ -8535,6 +8543,9 @@
             this.panel57.PerformLayout();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            this.panel63.ResumeLayout(false);
+            this.panel63.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.panel58.ResumeLayout(false);
             this.panel58.PerformLayout();
             this.panel45.ResumeLayout(false);
@@ -8587,17 +8598,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.groupBoxLSGD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.panel40.ResumeLayout(false);
-            this.panel40.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.panel63.ResumeLayout(false);
-            this.panel63.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.ResumeLayout(false);
 
         }
