@@ -86,6 +86,23 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.tabThongtincanhan = new System.Windows.Forms.TabPage();
+            this.groupBoxTTTK = new System.Windows.Forms.GroupBox();
+            this.btnSua2CN = new System.Windows.Forms.Button();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.labelmkmoiCN = new System.Windows.Forms.Label();
+            this.labelMKCN = new System.Windows.Forms.Label();
+            this.labelTtkcn = new System.Windows.Forms.Label();
+            this.groupBoxTTCN = new System.Windows.Forms.GroupBox();
+            this.btnSuattcnCn = new System.Windows.Forms.Button();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.labelSDTCN = new System.Windows.Forms.Label();
+            this.labelDiaChi = new System.Windows.Forms.Label();
+            this.labelTenCN = new System.Windows.Forms.Label();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
@@ -95,6 +112,9 @@
             this.tabQLNhaDang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBoxThongTinNhaDang.SuspendLayout();
+            this.tabThongtincanhan.SuspendLayout();
+            this.groupBoxTTTK.SuspendLayout();
+            this.groupBoxTTCN.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabDangTin
@@ -102,11 +122,12 @@
             this.tabDangTin.Controls.Add(this.tabPage1);
             this.tabDangTin.Controls.Add(this.tabLSGD);
             this.tabDangTin.Controls.Add(this.tabQLNhaDang);
-            this.tabDangTin.Location = new System.Drawing.Point(65, 29);
+            this.tabDangTin.Controls.Add(this.tabThongtincanhan);
+            this.tabDangTin.Location = new System.Drawing.Point(106, 41);
             this.tabDangTin.Name = "tabDangTin";
             this.tabDangTin.SelectedIndex = 0;
             this.tabDangTin.Size = new System.Drawing.Size(1410, 574);
-            this.tabDangTin.TabIndex = 8;
+            this.tabDangTin.TabIndex = 10;
             // 
             // tabPage1
             // 
@@ -653,14 +674,172 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Hình thức";
             // 
+            // tabThongtincanhan
+            // 
+            this.tabThongtincanhan.Controls.Add(this.groupBoxTTTK);
+            this.tabThongtincanhan.Controls.Add(this.groupBoxTTCN);
+            this.tabThongtincanhan.Location = new System.Drawing.Point(4, 25);
+            this.tabThongtincanhan.Name = "tabThongtincanhan";
+            this.tabThongtincanhan.Padding = new System.Windows.Forms.Padding(3);
+            this.tabThongtincanhan.Size = new System.Drawing.Size(1402, 545);
+            this.tabThongtincanhan.TabIndex = 3;
+            this.tabThongtincanhan.Text = "Thông tin cá nhân";
+            this.tabThongtincanhan.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxTTTK
+            // 
+            this.groupBoxTTTK.Controls.Add(this.btnSua2CN);
+            this.groupBoxTTTK.Controls.Add(this.textBox18);
+            this.groupBoxTTTK.Controls.Add(this.textBox17);
+            this.groupBoxTTTK.Controls.Add(this.textBox16);
+            this.groupBoxTTTK.Controls.Add(this.labelmkmoiCN);
+            this.groupBoxTTTK.Controls.Add(this.labelMKCN);
+            this.groupBoxTTTK.Controls.Add(this.labelTtkcn);
+            this.groupBoxTTTK.Location = new System.Drawing.Point(740, 36);
+            this.groupBoxTTTK.Name = "groupBoxTTTK";
+            this.groupBoxTTTK.Size = new System.Drawing.Size(422, 342);
+            this.groupBoxTTTK.TabIndex = 1;
+            this.groupBoxTTTK.TabStop = false;
+            this.groupBoxTTTK.Text = "Thông tin tài khoản";
+            // 
+            // btnSua2CN
+            // 
+            this.btnSua2CN.Location = new System.Drawing.Point(178, 263);
+            this.btnSua2CN.Name = "btnSua2CN";
+            this.btnSua2CN.Size = new System.Drawing.Size(105, 42);
+            this.btnSua2CN.TabIndex = 7;
+            this.btnSua2CN.Text = "Sửa";
+            this.btnSua2CN.UseVisualStyleBackColor = true;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(178, 179);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(165, 22);
+            this.textBox18.TabIndex = 11;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(178, 116);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(165, 22);
+            this.textBox17.TabIndex = 10;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(178, 61);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(165, 22);
+            this.textBox16.TabIndex = 7;
+            // 
+            // labelmkmoiCN
+            // 
+            this.labelmkmoiCN.AutoSize = true;
+            this.labelmkmoiCN.Location = new System.Drawing.Point(38, 179);
+            this.labelmkmoiCN.Name = "labelmkmoiCN";
+            this.labelmkmoiCN.Size = new System.Drawing.Size(92, 17);
+            this.labelmkmoiCN.TabIndex = 9;
+            this.labelmkmoiCN.Text = "Mật khẩu mới";
+            // 
+            // labelMKCN
+            // 
+            this.labelMKCN.AutoSize = true;
+            this.labelMKCN.Location = new System.Drawing.Point(38, 119);
+            this.labelMKCN.Name = "labelMKCN";
+            this.labelMKCN.Size = new System.Drawing.Size(85, 17);
+            this.labelMKCN.TabIndex = 8;
+            this.labelMKCN.Text = "Mật khẩu cũ";
+            // 
+            // labelTtkcn
+            // 
+            this.labelTtkcn.AutoSize = true;
+            this.labelTtkcn.Location = new System.Drawing.Point(38, 61);
+            this.labelTtkcn.Name = "labelTtkcn";
+            this.labelTtkcn.Size = new System.Drawing.Size(95, 17);
+            this.labelTtkcn.TabIndex = 7;
+            this.labelTtkcn.Text = "Tên tài khoản";
+            // 
+            // groupBoxTTCN
+            // 
+            this.groupBoxTTCN.Controls.Add(this.btnSuattcnCn);
+            this.groupBoxTTCN.Controls.Add(this.textBox15);
+            this.groupBoxTTCN.Controls.Add(this.textBox14);
+            this.groupBoxTTCN.Controls.Add(this.textBox13);
+            this.groupBoxTTCN.Controls.Add(this.labelSDTCN);
+            this.groupBoxTTCN.Controls.Add(this.labelDiaChi);
+            this.groupBoxTTCN.Controls.Add(this.labelTenCN);
+            this.groupBoxTTCN.Location = new System.Drawing.Point(204, 36);
+            this.groupBoxTTCN.Name = "groupBoxTTCN";
+            this.groupBoxTTCN.Size = new System.Drawing.Size(378, 342);
+            this.groupBoxTTCN.TabIndex = 0;
+            this.groupBoxTTCN.TabStop = false;
+            this.groupBoxTTCN.Text = "Thông tin cá nhân";
+            // 
+            // btnSuattcnCn
+            // 
+            this.btnSuattcnCn.Location = new System.Drawing.Point(152, 263);
+            this.btnSuattcnCn.Name = "btnSuattcnCn";
+            this.btnSuattcnCn.Size = new System.Drawing.Size(105, 42);
+            this.btnSuattcnCn.TabIndex = 6;
+            this.btnSuattcnCn.Text = "Sửa";
+            this.btnSuattcnCn.UseVisualStyleBackColor = true;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(152, 179);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(165, 22);
+            this.textBox15.TabIndex = 5;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(152, 116);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(165, 22);
+            this.textBox14.TabIndex = 4;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(152, 61);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(165, 22);
+            this.textBox13.TabIndex = 3;
+            // 
+            // labelSDTCN
+            // 
+            this.labelSDTCN.AutoSize = true;
+            this.labelSDTCN.Location = new System.Drawing.Point(31, 182);
+            this.labelSDTCN.Name = "labelSDTCN";
+            this.labelSDTCN.Size = new System.Drawing.Size(91, 17);
+            this.labelSDTCN.TabIndex = 2;
+            this.labelSDTCN.Text = "Số điện thoại";
+            // 
+            // labelDiaChi
+            // 
+            this.labelDiaChi.AutoSize = true;
+            this.labelDiaChi.Location = new System.Drawing.Point(31, 119);
+            this.labelDiaChi.Name = "labelDiaChi";
+            this.labelDiaChi.Size = new System.Drawing.Size(51, 17);
+            this.labelDiaChi.TabIndex = 1;
+            this.labelDiaChi.Text = "Địa chỉ";
+            // 
+            // labelTenCN
+            // 
+            this.labelTenCN.AutoSize = true;
+            this.labelTenCN.Location = new System.Drawing.Point(31, 61);
+            this.labelTenCN.Name = "labelTenCN";
+            this.labelTenCN.Size = new System.Drawing.Size(88, 17);
+            this.labelTenCN.TabIndex = 0;
+            this.labelTenCN.Text = "Tên chủ nhà";
+            // 
             // ChuNha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1541, 633);
+            this.ClientSize = new System.Drawing.Size(1622, 656);
             this.Controls.Add(this.tabDangTin);
             this.Name = "ChuNha";
-            this.Text = "Form1";
+            this.Text = "ChuNha";
             this.tabDangTin.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -675,6 +854,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBoxThongTinNhaDang.ResumeLayout(false);
             this.groupBoxThongTinNhaDang.PerformLayout();
+            this.tabThongtincanhan.ResumeLayout(false);
+            this.groupBoxTTTK.ResumeLayout(false);
+            this.groupBoxTTTK.PerformLayout();
+            this.groupBoxTTCN.ResumeLayout(false);
+            this.groupBoxTTCN.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -739,5 +923,22 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TabPage tabThongtincanhan;
+        private System.Windows.Forms.GroupBox groupBoxTTTK;
+        private System.Windows.Forms.Button btnSua2CN;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label labelmkmoiCN;
+        private System.Windows.Forms.Label labelMKCN;
+        private System.Windows.Forms.Label labelTtkcn;
+        private System.Windows.Forms.GroupBox groupBoxTTCN;
+        private System.Windows.Forms.Button btnSuattcnCn;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label labelSDTCN;
+        private System.Windows.Forms.Label labelDiaChi;
+        private System.Windows.Forms.Label labelTenCN;
     }
 }
