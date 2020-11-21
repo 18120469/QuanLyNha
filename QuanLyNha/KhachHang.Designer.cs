@@ -1,6 +1,6 @@
 ﻿namespace QuanLyThueMuaNha
 {
-    partial class Form1
+    partial class KhachHang
     {
         /// <summary>
         /// Required designer variable.
@@ -260,7 +260,7 @@
             this.button6.Text = "Đăng ký mua nhà";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -271,8 +271,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "KhachHang";
+            this.Text = "khachHang";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
