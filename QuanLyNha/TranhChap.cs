@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyNha
 {
-    public partial class login : Form
+    public partial class TranhChap : Form
     {
-        public login()
+        public TranhChap()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

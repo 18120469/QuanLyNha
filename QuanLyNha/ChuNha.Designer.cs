@@ -54,9 +54,19 @@
             this.lb_tenTieuDe = new System.Windows.Forms.Label();
             this.tabLSGD = new System.Windows.Forms.TabPage();
             this.tabQLNhaDang = new System.Windows.Forms.TabPage();
+            this.groupBoxLSGD = new System.Windows.Forms.GroupBox();
+            this.lbnvpt = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lbSoTienGiaoDich = new System.Windows.Forms.Label();
+            this.lbNgayGiaoDich = new System.Windows.Forms.Label();
+            this.lbht = new System.Windows.Forms.Label();
+            this.lbMaHopDong = new System.Windows.Forms.Label();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
+            this.tabLSGD.SuspendLayout();
+            this.groupBoxLSGD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabDangTin
@@ -287,6 +297,7 @@
             // 
             // tabLSGD
             // 
+            this.tabLSGD.Controls.Add(this.groupBoxLSGD);
             this.tabLSGD.Location = new System.Drawing.Point(4, 25);
             this.tabLSGD.Name = "tabLSGD";
             this.tabLSGD.Padding = new System.Windows.Forms.Padding(3);
@@ -305,6 +316,76 @@
             this.tabQLNhaDang.Text = "Quản lý nhà đăng";
             this.tabQLNhaDang.UseVisualStyleBackColor = true;
             // 
+            // groupBoxLSGD
+            // 
+            this.groupBoxLSGD.Controls.Add(this.lbnvpt);
+            this.groupBoxLSGD.Controls.Add(this.dataGridView1);
+            this.groupBoxLSGD.Controls.Add(this.lbSoTienGiaoDich);
+            this.groupBoxLSGD.Controls.Add(this.lbNgayGiaoDich);
+            this.groupBoxLSGD.Controls.Add(this.lbht);
+            this.groupBoxLSGD.Controls.Add(this.lbMaHopDong);
+            this.groupBoxLSGD.Location = new System.Drawing.Point(8, 19);
+            this.groupBoxLSGD.Name = "groupBoxLSGD";
+            this.groupBoxLSGD.Size = new System.Drawing.Size(663, 404);
+            this.groupBoxLSGD.TabIndex = 5;
+            this.groupBoxLSGD.TabStop = false;
+            this.groupBoxLSGD.Text = "Lịch sử giao dịch";
+            // 
+            // lbnvpt
+            // 
+            this.lbnvpt.AutoSize = true;
+            this.lbnvpt.Location = new System.Drawing.Point(492, 39);
+            this.lbnvpt.Name = "lbnvpt";
+            this.lbnvpt.Size = new System.Drawing.Size(136, 17);
+            this.lbnvpt.TabIndex = 9;
+            this.lbnvpt.Text = "Nhân viên phụ trách";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 70);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(631, 313);
+            this.dataGridView1.TabIndex = 8;
+            // 
+            // lbSoTienGiaoDich
+            // 
+            this.lbSoTienGiaoDich.AutoSize = true;
+            this.lbSoTienGiaoDich.Location = new System.Drawing.Point(336, 39);
+            this.lbSoTienGiaoDich.Name = "lbSoTienGiaoDich";
+            this.lbSoTienGiaoDich.Size = new System.Drawing.Size(113, 17);
+            this.lbSoTienGiaoDich.TabIndex = 7;
+            this.lbSoTienGiaoDich.Text = "Số tiền giao dịch";
+            // 
+            // lbNgayGiaoDich
+            // 
+            this.lbNgayGiaoDich.AutoSize = true;
+            this.lbNgayGiaoDich.Location = new System.Drawing.Point(215, 39);
+            this.lbNgayGiaoDich.Name = "lbNgayGiaoDich";
+            this.lbNgayGiaoDich.Size = new System.Drawing.Size(102, 17);
+            this.lbNgayGiaoDich.TabIndex = 6;
+            this.lbNgayGiaoDich.Text = "Ngày giao dịch";
+            // 
+            // lbht
+            // 
+            this.lbht.AutoSize = true;
+            this.lbht.Location = new System.Drawing.Point(124, 39);
+            this.lbht.Name = "lbht";
+            this.lbht.Size = new System.Drawing.Size(68, 17);
+            this.lbht.TabIndex = 5;
+            this.lbht.Text = "Hình thức";
+            // 
+            // lbMaHopDong
+            // 
+            this.lbMaHopDong.AutoSize = true;
+            this.lbMaHopDong.Location = new System.Drawing.Point(6, 39);
+            this.lbMaHopDong.Name = "lbMaHopDong";
+            this.lbMaHopDong.Size = new System.Drawing.Size(91, 17);
+            this.lbMaHopDong.TabIndex = 4;
+            this.lbMaHopDong.Text = "Mã hợp đồng";
+            // 
             // ChuNha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -318,6 +399,10 @@
             this.tabPage1.PerformLayout();
             this.gb_ttcoban.ResumeLayout(false);
             this.gb_ttcoban.PerformLayout();
+            this.tabLSGD.ResumeLayout(false);
+            this.groupBoxLSGD.ResumeLayout(false);
+            this.groupBoxLSGD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,5 +435,12 @@
         private System.Windows.Forms.Label lb_tenTieuDe;
         private System.Windows.Forms.TabPage tabLSGD;
         private System.Windows.Forms.TabPage tabQLNhaDang;
+        private System.Windows.Forms.GroupBox groupBoxLSGD;
+        private System.Windows.Forms.Label lbnvpt;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lbSoTienGiaoDich;
+        private System.Windows.Forms.Label lbNgayGiaoDich;
+        private System.Windows.Forms.Label lbht;
+        private System.Windows.Forms.Label lbMaHopDong;
     }
 }
