@@ -64,7 +64,7 @@
             this.tabDangTin.Controls.Add(this.tabPage1);
             this.tabDangTin.Controls.Add(this.tabLSGD);
             this.tabDangTin.Controls.Add(this.tabQLNhaDang);
-            this.tabDangTin.Location = new System.Drawing.Point(0, 7);
+            this.tabDangTin.Location = new System.Drawing.Point(0, 12);
             this.tabDangTin.Name = "tabDangTin";
             this.tabDangTin.SelectedIndex = 0;
             this.tabDangTin.Size = new System.Drawing.Size(800, 475);
@@ -290,7 +290,7 @@
             this.tabLSGD.Location = new System.Drawing.Point(4, 25);
             this.tabLSGD.Name = "tabLSGD";
             this.tabLSGD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLSGD.Size = new System.Drawing.Size(792, 441);
+            this.tabLSGD.Size = new System.Drawing.Size(792, 446);
             this.tabLSGD.TabIndex = 1;
             this.tabLSGD.Text = "Lịch sử giao dịch";
             this.tabLSGD.UseVisualStyleBackColor = true;
@@ -300,7 +300,7 @@
             this.tabQLNhaDang.Location = new System.Drawing.Point(4, 25);
             this.tabQLNhaDang.Name = "tabQLNhaDang";
             this.tabQLNhaDang.Padding = new System.Windows.Forms.Padding(3);
-            this.tabQLNhaDang.Size = new System.Drawing.Size(792, 441);
+            this.tabQLNhaDang.Size = new System.Drawing.Size(792, 446);
             this.tabQLNhaDang.TabIndex = 2;
             this.tabQLNhaDang.Text = "Quản lý nhà đăng";
             this.tabQLNhaDang.UseVisualStyleBackColor = true;
