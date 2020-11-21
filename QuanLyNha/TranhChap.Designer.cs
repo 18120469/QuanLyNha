@@ -942,7 +942,7 @@
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage17.Size = new System.Drawing.Size(1355, 555);
             this.tabPage17.TabIndex = 16;
-            this.tabPage17.Text = "16,17";
+            this.tabPage17.Text = "16";
             this.tabPage17.UseVisualStyleBackColor = true;
             // 
             // panel5
@@ -1455,7 +1455,7 @@
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage18.Size = new System.Drawing.Size(1355, 555);
             this.tabPage18.TabIndex = 17;
-            this.tabPage18.Text = "18";
+            this.tabPage18.Text = "17";
             this.tabPage18.UseVisualStyleBackColor = true;
             // 
             // tabPage19
@@ -1470,7 +1470,7 @@
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage19.Size = new System.Drawing.Size(1355, 555);
             this.tabPage19.TabIndex = 18;
-            this.tabPage19.Text = "19";
+            this.tabPage19.Text = "18";
             this.tabPage19.UseVisualStyleBackColor = true;
             // 
             // label19
@@ -1882,7 +1882,7 @@
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage20.Size = new System.Drawing.Size(1355, 555);
             this.tabPage20.TabIndex = 19;
-            this.tabPage20.Text = "20";
+            this.tabPage20.Text = "19";
             this.tabPage20.UseVisualStyleBackColor = true;
             // 
             // label17
