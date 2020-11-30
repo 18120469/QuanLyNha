@@ -1,4 +1,4 @@
-﻿namespace QuanLyThueMuaNha
+﻿namespace QuanLyNha
 {
     partial class KhachHang
     {
