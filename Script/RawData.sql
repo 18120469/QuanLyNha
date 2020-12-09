@@ -130,10 +130,10 @@ go
 
 --Hợp Đồng Mua
 insert into HopDongMua values('1',300)
+insert into HopDongMua values('3',700)
 go
 
 --Hợp Đồng Thuê
-insert into HopDongThue values('2',GETDATE()+3,GETDATE()+63)
-insert into HopDongThue values('3',GETDATE()+10,GETDATE()+100)
-insert into HopDongThue values('4',GETDATE()+5,GETDATE()+370)
+insert into HopDongThue values('2',GETDATE()+3,GETDATE()+63,4)
+insert into HopDongThue values('4',GETDATE()+5,GETDATE()+370,15)
 go

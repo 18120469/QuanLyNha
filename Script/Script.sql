@@ -111,6 +111,7 @@ CREATE TABLE [dbo].[HopDongThue](
  MaHopDongThue nchar(10) not null,
  NgayBatDau date not null,
  NgayHetHan date not null,
+ TienThueMotThang money not null,
  CONSTRAINT PK_HopDongThue PRIMARY KEY(MaHopDongThue)
  )
 CREATE TABLE [dbo].[HopDongMua](
