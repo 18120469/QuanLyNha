@@ -427,7 +427,20 @@ begin
 	set @stt = (select deleted.STT from deleted)
 	update TieuChiChonNha set STT = STT - 1 where @temp = TieuChiChonNha.MaKhachHang and STT > @stt
 end
-
+go
+--Nha: NgayDang phải nhỏ hơn hoặc bằng ngày hiện tại.
+create trigger [dbo].[Trigger_NgayDang]
+on [dbo].[Nha]
+for insert,update
+as 
+begin 
+if exists(select * from inserted where NgayDang >= cast(GETDATE()as date))
+		begin
+			raiserror(N'Loi: Ngay đang phai nho hon ngay hien tai. Vui long nhap lai',16,1)
+			
+		end
+		
+end
 
 
 
