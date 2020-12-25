@@ -87,19 +87,21 @@ update Nha set TinhTrang = 0
 go
 
 --Nhà Thuê
-insert into NhaThue values ('1',3)
+
 insert into NhaThue values ('3',4)
-insert into NhaThue values ('4',6)
 insert into NhaThue values ('8',11)
 insert into NhaThue values ('9',12)
 insert into NhaThue values ('10',15)
+insert into NhaThue values ('7',7)
 go
 
 --Nhà Bán 
+insert into NhaBan values ('1',400, 'phải đặt cọc trước')
+insert into NhaBan values ('4',500, 'không cần')
 insert into NhaBan values ('2',300,'không cần')
 insert into NhaBan values ('5',400,'phải đặt cọc trước')
 insert into NhaBan values ('6',800,'không cần')
-insert into NhaBan values ('7',700,'không cân')
+
 go
 --Lịch Sử Xem Nhà
 insert into LichSuXemNha values('1','1',GETDATE(),N'nhà tạm được')
@@ -125,7 +127,10 @@ insert into LichSuXemNha values('5','7',GETDATE(),N'khu vực xung quanh ồn à
 insert into HopDong values('1','1','2',GETDATE()+1)
 insert into HopDong values('2','2','3',GETDATE()+1)
 insert into HopDong values('3','3','7',GETDATE()+1)
-insert into HopDong values('4','4','10',GETDATE()+1)
+--insert into HopDong values('4','4','10',GETDATE()+1)
+update Nha set TinhTrang = 1 where MaNha = 2
+update Nha set TinhTrang = 1 where MaNha = 3
+update Nha set TinhTrang = 1 where MaNha = 7
 go
 
 --Hợp Đồng Mua
@@ -135,5 +140,5 @@ go
 --Hợp Đồng Thuê
 insert into HopDongThue values('2',GETDATE()+3,GETDATE()+63)
 insert into HopDongThue values('3',GETDATE()+10,GETDATE()+100)
-insert into HopDongThue values('4',GETDATE()+5,GETDATE()+370)
+--insert into HopDongThue values('4',GETDATE()+5,GETDATE()+370)
 go
