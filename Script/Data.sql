@@ -344,7 +344,9 @@ INSERT [dbo].[ChuNha] ([MaChuNha], [TenChuNha], [DiaChi_ChuNha], [SDT_ChuNha], [
 INSERT [dbo].[ChuNha] ([MaChuNha], [TenChuNha], [DiaChi_ChuNha], [SDT_ChuNha], [TenTaiKhoan]) VALUES (N'ChuNha_97 ', N'Jarrod', N'81 Hague Drive', N'0662525101', N'TK_76               ')
 INSERT [dbo].[ChuNha] ([MaChuNha], [TenChuNha], [DiaChi_ChuNha], [SDT_ChuNha], [TenTaiKhoan]) VALUES (N'ChuNha_98 ', N'Kari', N'100 South First Boulevard', N'0414162299', N'TK_98               ')
 INSERT [dbo].[ChuNha] ([MaChuNha], [TenChuNha], [DiaChi_ChuNha], [SDT_ChuNha], [TenTaiKhoan]) VALUES (N'ChuNha_99 ', N'Kelvin', N'312 Cowley Freeway', N'0876196895', N'TK_80               ')
+
 GO
+
 INSERT [dbo].[LoaiNha] ([MaLoaiNha], [TenLoaiNha]) VALUES (N'LN_0A     ', N'Brown')
 INSERT [dbo].[LoaiNha] ([MaLoaiNha], [TenLoaiNha]) VALUES (N'LN_0C     ', N'IndianRed')
 INSERT [dbo].[LoaiNha] ([MaLoaiNha], [TenLoaiNha]) VALUES (N'LN_0D     ', N'Maroon')
@@ -748,7 +750,10 @@ INSERT [dbo].[Nha] ([MaNha], [Duong], [Quan], [KhuVuc], [ThanhPho], [MaLoaiNha],
 INSERT [dbo].[Nha] ([MaNha], [Duong], [Quan], [KhuVuc], [ThanhPho], [MaLoaiNha], [SoLuongPhong], [NgayDang], [NgayHetHan], [TinhTrang], [SoLuotXem], [MaChuNha], [MaNhanVien], [MaChiNhanh]) VALUES (N'Nha_97    ', N'Customer Department', N'Ferryhill', N'Atkins', N'Sutton Coldfield', N'LN_8L     ', 6, CAST(N'2019-09-23' AS Date), CAST(N'2022-01-02' AS Date), 1, 119993, N'ChuNha_87 ', N'NV_87     ', N'CN_87     ')
 INSERT [dbo].[Nha] ([MaNha], [Duong], [Quan], [KhuVuc], [ThanhPho], [MaLoaiNha], [SoLuongPhong], [NgayDang], [NgayHetHan], [TinhTrang], [SoLuotXem], [MaChuNha], [MaNhanVien], [MaChiNhanh]) VALUES (N'Nha_98    ', N'Washington Building', N'Chesham', N'Mc Guire', N'Brighton', N'LN_6S     ', 4, CAST(N'2019-08-05' AS Date), CAST(N'2022-11-15' AS Date), 1, 91673, N'ChuNha_71 ', N'NV_71     ', N'CN_71     ')
 INSERT [dbo].[Nha] ([MaNha], [Duong], [Quan], [KhuVuc], [ThanhPho], [MaLoaiNha], [SoLuongPhong], [NgayDang], [NgayHetHan], [TinhTrang], [SoLuotXem], [MaChuNha], [MaNhanVien], [MaChiNhanh]) VALUES (N'Nha_99    ', N'2nd Floor', N'Isle of Rhum', N'Mc Clure', N'Exeter', N'LN_7S     ', 4, CAST(N'2019-06-20' AS Date), CAST(N'2022-08-31' AS Date), 0, 13274, N'ChuNha_80 ', N'NV_80     ', N'CN_80     ')
+update Nha set TinhTrang = 0
 GO
+
+
 INSERT [dbo].[KhachHang] ([MaKhachHang], [TenKhachHang], [Duong], [Quan], [KhuVuc], [ThanhPho], [SDT_KH], [MaChiNhanh], [TenTaiKhoan]) VALUES (N'KH_00     ', N'Branden', N'Lochgoilhead', N'Down', N'Kingston upon Hull', N'Glenfinnan', N'0640792024', N'CN_19     ', N'TK_19               ')
 INSERT [dbo].[KhachHang] ([MaKhachHang], [TenKhachHang], [Duong], [Quan], [KhuVuc], [ThanhPho], [SDT_KH], [MaChiNhanh], [TenTaiKhoan]) VALUES (N'KH_01     ', N'Blair', N'Nuneaton', N'Selkirkshire', N'Portsmouth', N'West Byfleet', N'0878156489', N'CN_95     ', N'TK_95               ')
 INSERT [dbo].[KhachHang] ([MaKhachHang], [TenKhachHang], [Duong], [Quan], [KhuVuc], [ThanhPho], [SDT_KH], [MaChiNhanh], [TenTaiKhoan]) VALUES (N'KH_02     ', N'Eric', N'Alcester', N'Leicestershire', N'Exeter', N'Kilbirnie', N'0100250532', N'CN_99     ', N'TK_99               ')
