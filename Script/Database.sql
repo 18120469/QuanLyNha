@@ -258,7 +258,7 @@ declare @temp nchar(10)
 declare @temp2 nchar(10)
 	if not exists(select * from inserted) -- delete
 		begin
-			set @temp2 = (select deleted.MaNha from deleted)
+			set @temp2 = (select top(1) deleted.MaNha from deleted)
 			update Nha
 			set SoLuotXem = SoLuotXem - 1 
 			where Nha.MaNha = @temp2
@@ -267,7 +267,7 @@ declare @temp2 nchar(10)
 	begin
 		if not exists(select * from deleted) -- insert
 		begin
-			set @temp = (select inserted.MaNha from inserted)
+			set @temp = (select top(1) inserted.MaNha from inserted)
 			update Nha 
 			set SoLuotXem = SoLuotXem + 1 where Nha.MaNha = @temp
 		end
@@ -277,11 +277,11 @@ declare @temp2 nchar(10)
 			begin 
 				if exists(select * from Nha, inserted where inserted.MaNha = Nha.MaNha)
 					begin 
-						set @temp = (select inserted.MaNha from inserted)
+						set @temp = (select top(1) inserted.MaNha from inserted)
 						update Nha 
 						set SoLuotXem = SoLuotXem + 1 where Nha.MaNha = @temp
 
-						set @temp2 = (select deleted.MaNha from deleted)
+						set @temp2 = (select top(1) deleted.MaNha from deleted)
 						update Nha
 						set SoLuotXem = SoLuotXem - 1 where Nha.MaNha = @temp2
 					end
@@ -428,13 +428,15 @@ begin
 	update TieuChiChonNha set STT = STT - 1 where @temp = TieuChiChonNha.MaKhachHang and STT > @stt
 end
 go
+
+
 --Nha: NgayDang phải nhỏ hơn hoặc bằng ngày hiện tại.
 create trigger [dbo].[Trigger_NgayDang]
 on [dbo].[Nha]
 for insert,update
 as 
 begin 
-if exists(select * from inserted where NgayDang < cast(GETDATE()as date))
+if exists(select * from inserted where NgayDang > cast(GETDATE()as date))
 		begin
 			raiserror(N'Loi: Ngay đang phai nho hon ngay hien tai. Vui long nhap lai',16,1)
 			
