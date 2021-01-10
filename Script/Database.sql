@@ -433,10 +433,10 @@ go
 --Nha: NgayDang phải nhỏ hơn hoặc bằng ngày hiện tại.
 create trigger [dbo].[Trigger_NgayDang]
 on [dbo].[Nha]
-for insert,update
+for insert
 as 
 begin 
-if exists(select * from inserted where NgayDang > cast(GETDATE()as date))
+if exists(select * from inserted where NgayDang < cast(GETDATE()as date))
 		begin
 			raiserror(N'Loi: Ngay đang phai nho hon ngay hien tai. Vui long nhap lai',16,1)
 			
