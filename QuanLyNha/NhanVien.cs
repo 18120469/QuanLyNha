@@ -165,8 +165,6 @@ namespace QuanLyNha
 
         private void button9_Click(object sender, EventArgs e)
         {
-            try
-            {
                 if (hdthue.Checked == true)
                     using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
                     {
@@ -232,11 +230,6 @@ namespace QuanLyNha
                         }
                         connection.Close();
                     }
-            }
-            catch (Exception) { 
-                 MessageBox.Show("vui lòng nhập đủ và đúng thông tin", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)

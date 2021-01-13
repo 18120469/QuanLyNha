@@ -16,8 +16,8 @@ namespace QuanLyNha
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChuNha("2"));
-            //Application.Run(new NhanVien("1"));
+            //Application.Run(new ChuNha("2"));
+            Application.Run(new NhanVien("1"));
             //Application.Run(new admin());
             //Application.Run(new KhachHang("1"));
         }
