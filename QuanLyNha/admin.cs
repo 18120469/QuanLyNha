@@ -6,75 +6,157 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace QuanLyNha
 {
     public partial class admin : Form
     {
+        public BindingSource dsnha = new BindingSource();
         public admin()
         {
             InitializeComponent();
+            load();
+        }
+        public void load()
+        {
+            danhsachnha.DataSource = dsnha;
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+            {
+                DataSet data = new DataSet();
+                string query = "select * from Nha";
+                connection.Open();
+                SqlCommand command2 = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command2;
+                adapter.Fill(data);
+                connection.Close();
+                dsnha.DataSource = data.Tables[0];
+            }
+            manha.DataBindings.Add(new Binding("text", danhsachnha.DataSource, "MaNha"));
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        private void timkiemhopdong_Click(object sender, EventArgs e)
         {
-
+            if (hopdongban.Checked == true)
+                using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+                {
+                    DataTable table = new DataTable();
+                    DataSet data = new DataSet();
+                    string query = "exec ThongKeHopDongThue  @ngaybatdau, @ngayketthuc";
+                    connection.Open();
+                    SqlCommand command2 = new SqlCommand(query, connection);
+                    command2.Parameters.AddWithValue("@ngaybatdau", ngaybatdau.Value);
+                    command2.Parameters.AddWithValue("@ngayketthuc", ngayketthuc.Value);
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    adapter.SelectCommand = command2;
+                    adapter.Fill(data);
+                    connection.Close();
+                    banghopdong.DataSource = data.Tables[0];
+                    table = data.Tables[1];
+                    foreach (DataRow row in table.Rows)
+                    {
+                        tongsohopdong.Text = row["SoLuongHopDong"].ToString();
+                    }
+                }
+            if (hopdongthue.Checked == true)
+                using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+                {
+                    DataTable table = new DataTable();
+                    DataSet data = new DataSet();
+                    string query = "exec ThongKeHopDongBan @ngaybatdau, @ngayketthuc";
+                    connection.Open();
+                    SqlCommand command2 = new SqlCommand(query, connection);
+                    command2.Parameters.AddWithValue("@ngaybatdau", ngaybatdau.Value);
+                    command2.Parameters.AddWithValue("@ngayketthuc", ngayketthuc.Value);
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    adapter.SelectCommand = command2;
+                    adapter.Fill(data);
+                    connection.Close();
+                    banghopdong.DataSource = data.Tables[0];
+                    table = data.Tables[1];
+                    foreach (DataRow row in table.Rows)
+                    {
+                        tongsohopdong.Text = row["SoLuongHopDong"].ToString();
+                    }
+                }
         }
 
-        private void label18_Click(object sender, EventArgs e)
+        private void button20_Click(object sender, EventArgs e)
         {
-
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+            {
+                DataTable table = new DataTable();
+                DataSet data = new DataSet();
+                string query = "exec ThongKeKhachHangTheoTieuChi";
+                connection.Open();
+                SqlCommand command2 = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command2;
+                adapter.Fill(data);
+                connection.Close();
+                bangtieuchi.DataSource = data.Tables[0];
+                table = data.Tables[1];
+                foreach (DataRow row in table.Rows)
+                {
+                    soluongtieuchi.Text = row["tongsotieuchi"].ToString();
+                }
+            }
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
+        private void xemls_Click(object sender, EventArgs e)
         {
-
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+            {
+                DataSet data = new DataSet();
+                string query = "exec KHXemLichSuXemNha '" + manhaxemls.Text + "'";
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                adapter.Fill(data);
+                banglsxemnha.DataSource = data.Tables[0];
+                connection.Close();
+            }
         }
 
-        private void panel6_Paint_1(object sender, PaintEventArgs e)
+        private void timkiemnha_Click(object sender, EventArgs e)
         {
-
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+            {
+                DataTable table = new DataTable();
+                DataSet data = new DataSet();
+                string query = "exec ThongKeLichSuDangNha @machunha";
+                connection.Open();
+                SqlCommand command2 = new SqlCommand(query, connection);
+                command2.Parameters.AddWithValue("@machunha", machunha.Text);
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command2;
+                adapter.Fill(data);
+                connection.Close();
+                danhsachnha.DataSource = data.Tables[0];
+                table = data.Tables[1];
+                foreach (DataRow row in table.Rows)
+                {
+                    soluongnha.Text = row["SoLuongNhaDang"].ToString();
+                }
+            }
         }
 
-        private void panel9_Paint(object sender, PaintEventArgs e)
+        private void timtc_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox20_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label27_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label43_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label72_Click(object sender, EventArgs e)
-        {
-
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+            {
+                DataSet data = new DataSet();
+                string query = "exec ThongKeKhachHangTheoTieuChi";
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                //command.Parameters.AddWithValue("@khuvuc", khuvuc.Text);
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+                adapter.Fill(data);
+                connection.Close();
+                dskhtc.DataSource = data.Tables[0];
+            }
         }
     }
 }
