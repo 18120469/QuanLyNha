@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace QuanLyNha
 {
-    public partial class NhanVien : Form
+    public partial class NhanVienFix : Form
     {
         public BindingSource hopdong = new BindingSource();
         public BindingSource danhsachnha = new BindingSource();
         public string manhanvien;
-        public NhanVien(string ma)
+        public NhanVienFix(string ma)
         {
             manhanvien = ma;
             InitializeComponent();
@@ -65,7 +65,7 @@ namespace QuanLyNha
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 DataSet data = new DataSet();
-                string query = "exec XemTieuChiNha '" + makhachhangxtc.Text + "'";
+                string query = "exec XemTieuChiNha1 '" + makhachhangxtc.Text + "'";
                 connection.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
@@ -81,7 +81,7 @@ namespace QuanLyNha
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
                 {
                     connection.Open();
-                    string query2 = "exec XoaHopDongThue @mahopdong";
+                    string query2 = "exec XoaHopDongThue1 @mahopdong";
                     SqlCommand command2 = new SqlCommand(query2, connection);
                     command2.Parameters.AddWithValue("@mahopdong", mahopdong.Text);
                     int result = command2.ExecuteNonQuery();
@@ -176,7 +176,7 @@ namespace QuanLyNha
                         }
                         while (mahd.Length > 11);
                         connection.Open();
-                        string query2 = "exec ThemHopDongThue @mahd, @makh, @manha,@ngaykyhd, @ngaythue, @ngayketthuc";
+                        string query2 = "exec ThemHopDongThue1 @mahd, @makh, @manha,@ngaykyhd, @ngaythue, @ngayketthuc";
                         SqlCommand command2 = new SqlCommand(query2, connection);
                         command2.Parameters.AddWithValue("@mahd", mahd);
                         command2.Parameters.AddWithValue("@makh", makh1.Text);
@@ -209,7 +209,7 @@ namespace QuanLyNha
                         }
                         while (mahd.Length > 11);
                         connection.Open();
-                        string query2 = "exec ThemHopDongBan @mahd, @makh, @manha, @ngaykyhd, @giatien";
+                        string query2 = "exec ThemHopDongBan1 @mahd, @makh, @manha, @ngaykyhd, @giatien";
                         SqlCommand command2 = new SqlCommand(query2, connection);
                         command2.Parameters.AddWithValue("@mahd", mahd);
                         command2.Parameters.AddWithValue("@makh", makh1.Text);
@@ -237,7 +237,7 @@ namespace QuanLyNha
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 DataSet data = new DataSet();
-                string query = "exec XemLichSuXemNha '" + makhachhangxtc.Text + "'";
+                string query = "exec XemLichSuXemNha1 '" + makhachhangxtc.Text + "'";
                 connection.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
@@ -251,7 +251,7 @@ namespace QuanLyNha
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 connection.Open();
-                string query2 = "exec ThemLichSuXemNha @makh,@manha,@ngayxem,@nhanxet";
+                string query2 = "exec ThemLichSuXemNha1 @makh,@manha,@ngayxem,@nhanxet";
                 SqlCommand command2 = new SqlCommand(query2, connection);
                 command2.Parameters.AddWithValue("@makh", makhls.Text);
                 command2.Parameters.AddWithValue("@manha", manhals.Text);
@@ -273,11 +273,11 @@ namespace QuanLyNha
 
         }
 
-        private void fix_Click(object sender, EventArgs e)
+        private void chuafix_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form nhanvienfix = new NhanVienFix(manhanvien);
-            nhanvienfix.ShowDialog();
+            Form nhanvien = new NhanVien(manhanvien);
+            nhanvien.ShowDialog();
             this.Close();
         }
     }

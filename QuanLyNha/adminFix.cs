@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace QuanLyNha
 {
-    public partial class admin : Form
+    public partial class adminFix : Form
     {
         public BindingSource dsnha = new BindingSource();
         public static string maadmin;
-        public admin(string ma)
+        public adminFix(string ma)
         {
             maadmin = ma;
             InitializeComponent();
@@ -46,7 +46,7 @@ namespace QuanLyNha
                 {
                     DataTable table = new DataTable();
                     DataSet data = new DataSet();
-                    string query = "exec ThongKeHopDongThue  @ngaybatdau, @ngayketthuc";
+                    string query = "exec ThongKeHopDongThue1  @ngaybatdau, @ngayketthuc";
                     connection.Open();
                     SqlCommand command2 = new SqlCommand(query, connection);
                     command2.Parameters.AddWithValue("@ngaybatdau", ngaybatdau.Value);
@@ -67,7 +67,7 @@ namespace QuanLyNha
                 {
                     DataTable table = new DataTable();
                     DataSet data = new DataSet();
-                    string query = "exec ThongKeHopDongBan @ngaybatdau, @ngayketthuc";
+                    string query = "exec ThongKeHopDongBan1 @ngaybatdau, @ngayketthuc";
                     connection.Open();
                     SqlCommand command2 = new SqlCommand(query, connection);
                     command2.Parameters.AddWithValue("@ngaybatdau", ngaybatdau.Value);
@@ -91,7 +91,7 @@ namespace QuanLyNha
             {
                 DataTable table = new DataTable();
                 DataSet data = new DataSet();
-                string query = "exec ThongKeKhachHangTheoTieuChi";
+                string query = "exec ThongKeKhachHangTheoTieuChi1";
                 connection.Open();
                 SqlCommand command2 = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -112,7 +112,7 @@ namespace QuanLyNha
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 DataSet data = new DataSet();
-                string query = "exec KHXemLichSuXemNha '" + manhaxemls.Text + "'";
+                string query = "exec KHXemLichSuXemNha1 '" + manhaxemls.Text + "'";
                 connection.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
@@ -128,7 +128,7 @@ namespace QuanLyNha
             {
                 DataTable table = new DataTable();
                 DataSet data = new DataSet();
-                string query = "exec ThongKeLichSuDangNha @machunha";
+                string query = "exec ThongKeLichSuDangNha1 @machunha";
                 connection.Open();
                 SqlCommand command2 = new SqlCommand(query, connection);
                 command2.Parameters.AddWithValue("@machunha", machunha.Text);
@@ -149,7 +149,7 @@ namespace QuanLyNha
                 {
                     DataTable table = new DataTable();
                     DataSet data = new DataSet();
-                    string query = "exec ThongKeNhaTrong";
+                    string query = "exec ThongKeNhaTrong1";
                     connection.Open();
                     SqlCommand command2 = new SqlCommand(query, connection);
                     SqlDataAdapter adapter = new SqlDataAdapter();
@@ -171,7 +171,7 @@ namespace QuanLyNha
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 DataSet data = new DataSet();
-                string query = "exec ThongKeKhachHangTheoTieuChi";
+                string query = "exec ThongKeKhachHangTheoTieuChi1";
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 //command.Parameters.AddWithValue("@khuvuc", khuvuc.Text);
@@ -188,7 +188,7 @@ namespace QuanLyNha
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 DataSet data = new DataSet();
-                string query = "exec XemLichSuXemNha "+ manha.Text;
+                string query = "exec XemLichSuXemNha1 "+ manha.Text;
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -199,11 +199,11 @@ namespace QuanLyNha
             }
         }
 
-        private void fix_Click(object sender, EventArgs e)
+        private void chuafix_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form adminfix = new adminFix(maadmin);
-            adminfix.ShowDialog();
+            Form adm = new admin(maadmin);
+            adm.ShowDialog();
             this.Close();
         }
     }

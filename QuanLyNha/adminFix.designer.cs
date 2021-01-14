@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNha
 {
-    partial class admin
+    partial class adminFix
     {
         /// <summary>
         /// Required designer variable.
@@ -246,12 +246,12 @@
             this.bangtieuchi = new System.Windows.Forms.DataGridView();
             this.xemtieuchi = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.fix = new System.Windows.Forms.Button();
             this.label80 = new System.Windows.Forms.Label();
             this.manhaxemls = new System.Windows.Forms.TextBox();
             this.xemls = new System.Windows.Forms.Button();
             this.label77 = new System.Windows.Forms.Label();
             this.banglsxemnha = new System.Windows.Forms.DataGridView();
+            this.chuafix = new System.Windows.Forms.Button();
             this.tpAdmin.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -2412,7 +2412,7 @@
             // 
             // tabPage8
             // 
-            this.tabPage8.Controls.Add(this.fix);
+            this.tabPage8.Controls.Add(this.chuafix);
             this.tabPage8.Controls.Add(this.label80);
             this.tabPage8.Controls.Add(this.manhaxemls);
             this.tabPage8.Controls.Add(this.xemls);
@@ -2425,17 +2425,6 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Lịch Sử Xem Nhà";
             this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // fix
-            // 
-            this.fix.AutoSize = true;
-            this.fix.Location = new System.Drawing.Point(346, 103);
-            this.fix.Name = "fix";
-            this.fix.Size = new System.Drawing.Size(137, 29);
-            this.fix.TabIndex = 40;
-            this.fix.Text = "Chuyển sang fix";
-            this.fix.UseVisualStyleBackColor = true;
-            this.fix.Click += new System.EventHandler(this.fix_Click);
             // 
             // label80
             // 
@@ -2485,13 +2474,24 @@
             this.banglsxemnha.Size = new System.Drawing.Size(864, 370);
             this.banglsxemnha.TabIndex = 3;
             // 
-            // admin
+            // chuafix
+            // 
+            this.chuafix.AutoSize = true;
+            this.chuafix.Location = new System.Drawing.Point(835, 57);
+            this.chuafix.Name = "chuafix";
+            this.chuafix.Size = new System.Drawing.Size(180, 29);
+            this.chuafix.TabIndex = 41;
+            this.chuafix.Text = "Chuyển sang chưa fix";
+            this.chuafix.UseVisualStyleBackColor = true;
+            this.chuafix.Click += new System.EventHandler(this.chuafix_Click);
+            // 
+            // adminFix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 634);
             this.Controls.Add(this.tpAdmin);
-            this.Name = "admin";
+            this.Name = "adminFix";
             this.Text = "admin";
             this.tpAdmin.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
@@ -2807,6 +2807,6 @@
         private System.Windows.Forms.Button xemlsxn;
         private System.Windows.Forms.RadioButton controng;
         private System.Windows.Forms.RadioButton khongcontrong;
-        private System.Windows.Forms.Button fix;
+        private System.Windows.Forms.Button chuafix;
     }
 }

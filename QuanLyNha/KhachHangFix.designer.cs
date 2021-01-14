@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNha
 {
-    partial class KhachHang
+    partial class KhachHangFix
     {
         /// <summary>
         /// Required designer variable.
@@ -95,7 +95,7 @@
             this.tentaikhoan = new System.Windows.Forms.TextBox();
             this.matkhau = new System.Windows.Forms.TextBox();
             this.buttonSuaTaiKhoan = new System.Windows.Forms.Button();
-            this.fix = new System.Windows.Forms.Button();
+            this.chuafix = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabTrangChu.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -600,7 +600,7 @@
             // 
             // tabPageQuanLyThongTin
             // 
-            this.tabPageQuanLyThongTin.Controls.Add(this.fix);
+            this.tabPageQuanLyThongTin.Controls.Add(this.chuafix);
             this.tabPageQuanLyThongTin.Controls.Add(this.groupBox5);
             this.tabPageQuanLyThongTin.Controls.Add(this.groupBox4);
             this.tabPageQuanLyThongTin.Location = new System.Drawing.Point(4, 25);
@@ -775,24 +775,24 @@
             this.buttonSuaTaiKhoan.Text = "Sửa";
             this.buttonSuaTaiKhoan.UseVisualStyleBackColor = true;
             // 
-            // fix
+            // chuafix
             // 
-            this.fix.AutoSize = true;
-            this.fix.Location = new System.Drawing.Point(597, 19);
-            this.fix.Name = "fix";
-            this.fix.Size = new System.Drawing.Size(137, 29);
-            this.fix.TabIndex = 40;
-            this.fix.Text = "Chuyển sang fix";
-            this.fix.UseVisualStyleBackColor = true;
-            this.fix.Click += new System.EventHandler(this.fix_Click);
+            this.chuafix.AutoSize = true;
+            this.chuafix.Location = new System.Drawing.Point(559, 30);
+            this.chuafix.Name = "chuafix";
+            this.chuafix.Size = new System.Drawing.Size(180, 29);
+            this.chuafix.TabIndex = 42;
+            this.chuafix.Text = "Chuyển sang chưa fix";
+            this.chuafix.UseVisualStyleBackColor = true;
+            this.chuafix.Click += new System.EventHandler(this.chuafix_Click);
             // 
-            // KhachHang
+            // KhachHangFix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1323, 713);
             this.Controls.Add(this.tabControl1);
-            this.Name = "KhachHang";
+            this.Name = "KhachHangFix";
             this.Text = "Khách hàng";
             this.tabControl1.ResumeLayout(false);
             this.tabTrangChu.ResumeLayout(false);
@@ -891,7 +891,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox stttc;
         private System.Windows.Forms.Label qqq;
-        private System.Windows.Forms.Button fix;
+        private System.Windows.Forms.Button chuafix;
     }
 }
 

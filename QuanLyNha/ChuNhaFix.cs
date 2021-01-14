@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace QuanLyNha
 {
-    public partial class ChuNha : Form
+    public partial class ChuNhaFix : Form
     {
         
         public string machunha;
         public BindingSource nha = new BindingSource();
-        public ChuNha(string ma)
+        public ChuNhaFix(string ma)
         {
             machunha = ma;
             InitializeComponent();
@@ -55,7 +55,7 @@ namespace QuanLyNha
                 {
                     DataTable table = new DataTable();
                     DataSet data = new DataSet();
-                    string query = "exec ChuNhaThongKeHopDongBan @machunha, @ngaybatdau, @ngayketthuc";
+                    string query = "exec ChuNhaThongKeHopDongBan1 @machunha, @ngaybatdau, @ngayketthuc";
                     connection.Open();
                     SqlCommand command2 = new SqlCommand(query, connection);
                     command2.Parameters.AddWithValue("@machunha", machunha);
@@ -77,7 +77,7 @@ namespace QuanLyNha
                 {
                     DataTable table = new DataTable();
                     DataSet data = new DataSet();
-                    string query = "exec ChuNhaThongKeHopDongThue @machunha, @ngaybatdau, @ngayketthuc";
+                    string query = "exec ChuNhaThongKeHopDongThue1 @machunha, @ngaybatdau, @ngayketthuc";
                     connection.Open();
                     SqlCommand command2 = new SqlCommand(query, connection);
                     command2.Parameters.AddWithValue("@machunha", machunha);
@@ -137,7 +137,7 @@ namespace QuanLyNha
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
                 {
                     connection.Open();
-                    string query2 = "exec CapNhatThongTinNha @manha,@duong,@quan,@khuvuc,@tp,'4',@slphong,@ngaydang,@ngayhethan,0,0,'2','1','1234567895'";
+                    string query2 = "exec CapNhatThongTinNha1 @manha,@duong,@quan,@khuvuc,@tp,'4',@slphong,@ngaydang,@ngayhethan,0,0,'2','1','1234567895'";
                     SqlCommand command2 = new SqlCommand(query2, connection);
                     command2.Parameters.AddWithValue("@manha", manha.Text);
                     command2.Parameters.AddWithValue("@duong", duong.Text);
@@ -173,7 +173,7 @@ namespace QuanLyNha
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 connection.Open();
-                string query2 = "exec XoaThongTinNha @manha";
+                string query2 = "exec XoaThongTinNha1 @manha";
                 SqlCommand command2 = new SqlCommand(query2, connection);
                 command2.Parameters.AddWithValue("@manha", manha.Text);
                 int result = command2.ExecuteNonQuery();
@@ -204,7 +204,7 @@ namespace QuanLyNha
                 }
                 while (manha.Length > 11);
                 connection.Open();
-                string query2 = "exec DangThongTinNha @manha,@duong,@quan,@khuvuc,@thanhpho,@loainha,@sophong,@ngaydang,@ngayhethan,0,0,@machunha,'1','CN_31'";
+                string query2 = "exec DangThongTinNha1 @manha,@duong,@quan,@khuvuc,@thanhpho,@loainha,@sophong,@ngaydang,@ngayhethan,0,0,@machunha,'1','CN_31'";
                 SqlCommand command2 = new SqlCommand(query2, connection);
                 command2.Parameters.AddWithValue("@manha", manha);
                 command2.Parameters.AddWithValue("@duong", dnduong.Text);
@@ -232,11 +232,11 @@ namespace QuanLyNha
             }
         }
 
-        private void fix_Click(object sender, EventArgs e)
+        private void chuafix_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form chunhafix = new ChuNhaFix(machunha);
-            chunhafix.ShowDialog();
+            Form chunha = new ChuNha(machunha);
+            chunha.ShowDialog();
             this.Close();
         }
     } 

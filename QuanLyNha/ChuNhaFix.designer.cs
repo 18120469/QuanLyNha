@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNha
 {
-    partial class ChuNha
+    partial class ChuNhaFix
     {
         /// <summary>
         /// Required designer variable.
@@ -114,7 +114,7 @@
             this.labelSDTCN = new System.Windows.Forms.Label();
             this.labelDiaChi = new System.Windows.Forms.Label();
             this.labelTenCN = new System.Windows.Forms.Label();
-            this.fix = new System.Windows.Forms.Button();
+            this.chuafix = new System.Windows.Forms.Button();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
@@ -807,7 +807,7 @@
             // 
             // tabThongtincanhan
             // 
-            this.tabThongtincanhan.Controls.Add(this.fix);
+            this.tabThongtincanhan.Controls.Add(this.chuafix);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTTK);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTCN);
             this.tabThongtincanhan.Location = new System.Drawing.Point(4, 25);
@@ -964,24 +964,24 @@
             this.labelTenCN.TabIndex = 0;
             this.labelTenCN.Text = "Tên chủ nhà";
             // 
-            // fix
+            // chuafix
             // 
-            this.fix.AutoSize = true;
-            this.fix.Location = new System.Drawing.Point(597, 50);
-            this.fix.Name = "fix";
-            this.fix.Size = new System.Drawing.Size(137, 29);
-            this.fix.TabIndex = 40;
-            this.fix.Text = "Chuyển sang fix";
-            this.fix.UseVisualStyleBackColor = true;
-            this.fix.Click += new System.EventHandler(this.fix_Click);
+            this.chuafix.AutoSize = true;
+            this.chuafix.Location = new System.Drawing.Point(564, 6);
+            this.chuafix.Name = "chuafix";
+            this.chuafix.Size = new System.Drawing.Size(180, 29);
+            this.chuafix.TabIndex = 42;
+            this.chuafix.Text = "Chuyển sang chưa fix";
+            this.chuafix.UseVisualStyleBackColor = true;
+            this.chuafix.Click += new System.EventHandler(this.chuafix_Click);
             // 
-            // ChuNha
+            // ChuNhaFix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1622, 656);
             this.Controls.Add(this.tabDangTin);
-            this.Name = "ChuNha";
+            this.Name = "ChuNhaFix";
             this.Text = "ChuNha";
             this.tabDangTin.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1097,6 +1097,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox dnloainha;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button fix;
+        private System.Windows.Forms.Button chuafix;
     }
 }

@@ -53,11 +53,23 @@
     <Compile Include="admin.Designer.cs">
       <DependentUpon>admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFix.designer.cs">
+      <DependentUpon>adminFix.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChuNha.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChuNha.Designer.cs">
       <DependentUpon>ChuNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChuNhaFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChuNhaFix.designer.cs">
+      <DependentUpon>ChuNhaFix.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnectionString.cs" />
     <Compile Include="KhachHang.cs">
@@ -65,6 +77,12 @@
     </Compile>
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHangFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHangFix.designer.cs">
+      <DependentUpon>KhachHangFix.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -78,22 +96,40 @@
     <Compile Include="NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVienFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienFix.designer.cs">
+      <DependentUpon>NhanVienFix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminFix.resx">
+      <DependentUpon>adminFix.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChuNha.resx">
       <DependentUpon>ChuNha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChuNhaFix.resx">
+      <DependentUpon>ChuNhaFix.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHangFix.resx">
+      <DependentUpon>KhachHangFix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienFix.resx">
+      <DependentUpon>NhanVienFix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
