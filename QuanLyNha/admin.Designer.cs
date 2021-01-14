@@ -249,6 +249,8 @@
             this.xemls = new System.Windows.Forms.Button();
             this.label77 = new System.Windows.Forms.Label();
             this.banglsxemnha = new System.Windows.Forms.DataGridView();
+            this.khongcontrong = new System.Windows.Forms.RadioButton();
+            this.controng = new System.Windows.Forms.RadioButton();
             this.tpAdmin.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -1735,6 +1737,8 @@
             // 
             // panel23
             // 
+            this.panel23.Controls.Add(this.controng);
+            this.panel23.Controls.Add(this.khongcontrong);
             this.panel23.Controls.Add(this.machunha);
             this.panel23.Controls.Add(this.label65);
             this.panel23.Controls.Add(this.groupBox3);
@@ -1748,7 +1752,7 @@
             // 
             // machunha
             // 
-            this.machunha.Location = new System.Drawing.Point(212, 115);
+            this.machunha.Location = new System.Drawing.Point(264, 77);
             this.machunha.Name = "machunha";
             this.machunha.Size = new System.Drawing.Size(181, 27);
             this.machunha.TabIndex = 40;
@@ -1756,7 +1760,7 @@
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(20, 118);
+            this.label65.Location = new System.Drawing.Point(72, 80);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(148, 19);
             this.label65.TabIndex = 39;
@@ -1802,7 +1806,7 @@
             // 
             // timkiemnha
             // 
-            this.timkiemnha.Location = new System.Drawing.Point(496, 112);
+            this.timkiemnha.Location = new System.Drawing.Point(542, 107);
             this.timkiemnha.Name = "timkiemnha";
             this.timkiemnha.Size = new System.Drawing.Size(109, 30);
             this.timkiemnha.TabIndex = 37;
@@ -2446,6 +2450,28 @@
             this.banglsxemnha.Size = new System.Drawing.Size(864, 370);
             this.banglsxemnha.TabIndex = 3;
             // 
+            // khongcontrong
+            // 
+            this.khongcontrong.AutoSize = true;
+            this.khongcontrong.Checked = true;
+            this.khongcontrong.Location = new System.Drawing.Point(264, 129);
+            this.khongcontrong.Name = "khongcontrong";
+            this.khongcontrong.Size = new System.Drawing.Size(151, 23);
+            this.khongcontrong.TabIndex = 41;
+            this.khongcontrong.TabStop = true;
+            this.khongcontrong.Text = "Nhà đã thuê/bán";
+            this.khongcontrong.UseVisualStyleBackColor = true;
+            // 
+            // controng
+            // 
+            this.controng.AutoSize = true;
+            this.controng.Location = new System.Drawing.Point(76, 129);
+            this.controng.Name = "controng";
+            this.controng.Size = new System.Drawing.Size(133, 23);
+            this.controng.TabIndex = 42;
+            this.controng.Text = "Nhà còn trống";
+            this.controng.UseVisualStyleBackColor = true;
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2766,5 +2792,7 @@
         private System.Windows.Forms.Button timtc;
         private System.Windows.Forms.DataGridView dslsxemnha;
         private System.Windows.Forms.Button xemlsxn;
+        private System.Windows.Forms.RadioButton controng;
+        private System.Windows.Forms.RadioButton khongcontrong;
     }
 }

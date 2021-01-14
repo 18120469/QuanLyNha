@@ -121,6 +121,7 @@ namespace QuanLyNha
 
         private void timkiemnha_Click(object sender, EventArgs e)
         {
+            if (machunha.Text!="")
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
                 DataTable table = new DataTable();
@@ -138,6 +139,27 @@ namespace QuanLyNha
                 foreach (DataRow row in table.Rows)
                 {
                     soluongnha.Text = row["SoLuongNhaDang"].ToString();
+                }
+            }
+            if (controng.Checked == true)
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+                {
+                    DataTable table = new DataTable();
+                    DataSet data = new DataSet();
+                    string query = "exec ThongKeNhaTrong";
+                    connection.Open();
+                    SqlCommand command2 = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    adapter.SelectCommand = command2;
+                    adapter.Fill(data);
+                    connection.Close();
+                    danhsachnha.DataSource = data.Tables[0];
+                    table = data.Tables[1];
+                    foreach (DataRow row in table.Rows)
+                    {
+                        soluongnha.Text = row["SoLuongNhaTrong"].ToString();
+                    }
                 }
             }
         }

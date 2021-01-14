@@ -39,12 +39,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lsxemnha = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.nhanxetls = new System.Windows.Forms.TextBox();
             this.themlsxn = new System.Windows.Forms.Button();
             this.ngayxemls = new System.Windows.Forms.DateTimePicker();
             this.label29 = new System.Windows.Forms.Label();
@@ -152,16 +157,13 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lsxemnha = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.nhanxetls = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bangtieuchi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsnha)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lsxemnha)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -176,8 +178,6 @@
             this.tabPage4.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lsxemnha)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -264,6 +264,7 @@
             this.label4.Size = new System.Drawing.Size(175, 19);
             this.label4.TabIndex = 5;
             this.label4.Text = "danh sách khách hàng";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // tabControl1
             // 
@@ -294,6 +295,47 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản Lý khách hàng";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(810, 298);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(130, 19);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Lịch sử xem nhà";
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.button1);
+            this.panel11.Controls.Add(this.lsxemnha);
+            this.panel11.Location = new System.Drawing.Point(424, 330);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(915, 196);
+            this.panel11.TabIndex = 27;
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(412, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 29);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "xem";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lsxemnha
+            // 
+            this.lsxemnha.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.lsxemnha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lsxemnha.Location = new System.Drawing.Point(26, 43);
+            this.lsxemnha.Name = "lsxemnha";
+            this.lsxemnha.RowHeadersWidth = 51;
+            this.lsxemnha.RowTemplate.Height = 24;
+            this.lsxemnha.Size = new System.Drawing.Size(858, 137);
+            this.lsxemnha.TabIndex = 21;
             // 
             // panel1
             // 
@@ -364,6 +406,13 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(480, 322);
             this.panel6.TabIndex = 36;
+            // 
+            // nhanxetls
+            // 
+            this.nhanxetls.Location = new System.Drawing.Point(217, 198);
+            this.nhanxetls.Name = "nhanxetls";
+            this.nhanxetls.Size = new System.Drawing.Size(217, 27);
+            this.nhanxetls.TabIndex = 55;
             // 
             // themlsxn
             // 
@@ -1376,54 +1425,6 @@
             this.label36.TabIndex = 24;
             this.label36.Text = "số điện thoại";
             // 
-            // panel11
-            // 
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.button1);
-            this.panel11.Controls.Add(this.lsxemnha);
-            this.panel11.Location = new System.Drawing.Point(424, 330);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(915, 196);
-            this.panel11.TabIndex = 27;
-            // 
-            // button1
-            // 
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(412, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 29);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "xem";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // lsxemnha
-            // 
-            this.lsxemnha.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.lsxemnha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.lsxemnha.Location = new System.Drawing.Point(26, 43);
-            this.lsxemnha.Name = "lsxemnha";
-            this.lsxemnha.RowHeadersWidth = 51;
-            this.lsxemnha.RowTemplate.Height = 24;
-            this.lsxemnha.Size = new System.Drawing.Size(858, 137);
-            this.lsxemnha.TabIndex = 21;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(810, 298);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 19);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Lịch sử xem nhà";
-            // 
-            // nhanxetls
-            // 
-            this.nhanxetls.Location = new System.Drawing.Point(217, 198);
-            this.nhanxetls.Name = "nhanxetls";
-            this.nhanxetls.Size = new System.Drawing.Size(217, 27);
-            this.nhanxetls.TabIndex = 55;
-            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1439,6 +1440,9 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lsxemnha)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1462,9 +1466,6 @@
             this.panel9.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lsxemnha)).EndInit();
             this.ResumeLayout(false);
 
         }
