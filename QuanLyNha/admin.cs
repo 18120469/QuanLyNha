@@ -39,7 +39,7 @@ namespace QuanLyNha
 
         private void timkiemhopdong_Click(object sender, EventArgs e)
         {
-            if (hopdongban.Checked == true)
+            if (hopdongban.Checked == true )
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
                 {
                     DataTable table = new DataTable();
