@@ -177,6 +177,8 @@
             this.panel26 = new System.Windows.Forms.Panel();
             this.label45 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.controng = new System.Windows.Forms.RadioButton();
+            this.khongcontrong = new System.Windows.Forms.RadioButton();
             this.machunha = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -249,8 +251,6 @@
             this.xemls = new System.Windows.Forms.Button();
             this.label77 = new System.Windows.Forms.Label();
             this.banglsxemnha = new System.Windows.Forms.DataGridView();
-            this.khongcontrong = new System.Windows.Forms.RadioButton();
-            this.controng = new System.Windows.Forms.RadioButton();
             this.tpAdmin.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -1675,7 +1675,7 @@
             // 
             // xemlsxn
             // 
-            this.xemlsxn.Location = new System.Drawing.Point(268, 165);
+            this.xemlsxn.Location = new System.Drawing.Point(264, 174);
             this.xemlsxn.Name = "xemlsxn";
             this.xemlsxn.Size = new System.Drawing.Size(109, 30);
             this.xemlsxn.TabIndex = 41;
@@ -1688,7 +1688,7 @@
             this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel27.Controls.Add(this.manha);
             this.panel27.Controls.Add(this.label52);
-            this.panel27.Location = new System.Drawing.Point(197, 77);
+            this.panel27.Location = new System.Drawing.Point(197, 92);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(245, 72);
             this.panel27.TabIndex = 36;
@@ -1711,7 +1711,7 @@
             // 
             // progressBar3
             // 
-            this.progressBar3.Location = new System.Drawing.Point(0, 61);
+            this.progressBar3.Location = new System.Drawing.Point(-3, 73);
             this.progressBar3.Name = "progressBar3";
             this.progressBar3.Size = new System.Drawing.Size(696, 10);
             this.progressBar3.TabIndex = 35;
@@ -1720,7 +1720,7 @@
             // 
             this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel26.Controls.Add(this.label45);
-            this.panel26.Location = new System.Drawing.Point(178, 6);
+            this.panel26.Location = new System.Drawing.Point(187, 12);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(264, 46);
             this.panel26.TabIndex = 34;
@@ -1749,6 +1749,28 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(729, 579);
             this.panel23.TabIndex = 3;
+            // 
+            // controng
+            // 
+            this.controng.AutoSize = true;
+            this.controng.Location = new System.Drawing.Point(76, 129);
+            this.controng.Name = "controng";
+            this.controng.Size = new System.Drawing.Size(133, 23);
+            this.controng.TabIndex = 42;
+            this.controng.Text = "Nhà còn trống";
+            this.controng.UseVisualStyleBackColor = true;
+            // 
+            // khongcontrong
+            // 
+            this.khongcontrong.AutoSize = true;
+            this.khongcontrong.Checked = true;
+            this.khongcontrong.Location = new System.Drawing.Point(264, 129);
+            this.khongcontrong.Name = "khongcontrong";
+            this.khongcontrong.Size = new System.Drawing.Size(151, 23);
+            this.khongcontrong.TabIndex = 41;
+            this.khongcontrong.TabStop = true;
+            this.khongcontrong.Text = "Nhà đã thuê/bán";
+            this.khongcontrong.UseVisualStyleBackColor = true;
             // 
             // machunha
             // 
@@ -2322,9 +2344,9 @@
             this.label51.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.Location = new System.Drawing.Point(806, 23);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(409, 24);
+            this.label51.Size = new System.Drawing.Size(369, 24);
             this.label51.TabIndex = 4;
-            this.label51.Text = "tìm kiếm khách hàng dựa trên khách hàng";
+            this.label51.Text = "tìm kiếm khách hàng dựa trên tiêu chí";
             // 
             // timtc
             // 
@@ -2449,28 +2471,6 @@
             this.banglsxemnha.RowTemplate.Height = 24;
             this.banglsxemnha.Size = new System.Drawing.Size(864, 370);
             this.banglsxemnha.TabIndex = 3;
-            // 
-            // khongcontrong
-            // 
-            this.khongcontrong.AutoSize = true;
-            this.khongcontrong.Checked = true;
-            this.khongcontrong.Location = new System.Drawing.Point(264, 129);
-            this.khongcontrong.Name = "khongcontrong";
-            this.khongcontrong.Size = new System.Drawing.Size(151, 23);
-            this.khongcontrong.TabIndex = 41;
-            this.khongcontrong.TabStop = true;
-            this.khongcontrong.Text = "Nhà đã thuê/bán";
-            this.khongcontrong.UseVisualStyleBackColor = true;
-            // 
-            // controng
-            // 
-            this.controng.AutoSize = true;
-            this.controng.Location = new System.Drawing.Point(76, 129);
-            this.controng.Name = "controng";
-            this.controng.Size = new System.Drawing.Size(133, 23);
-            this.controng.TabIndex = 42;
-            this.controng.Text = "Nhà còn trống";
-            this.controng.UseVisualStyleBackColor = true;
             // 
             // admin
             // 
