@@ -168,7 +168,7 @@
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dslsxemnha = new System.Windows.Forms.DataGridView();
             this.xemlsxn = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
             this.manha = new System.Windows.Forms.TextBox();
@@ -284,7 +284,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dslsxemnha)).BeginInit();
             this.panel27.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel23.SuspendLayout();
@@ -1650,7 +1650,7 @@
             // 
             // panel25
             // 
-            this.panel25.Controls.Add(this.dataGridView6);
+            this.panel25.Controls.Add(this.dslsxemnha);
             this.panel25.Controls.Add(this.xemlsxn);
             this.panel25.Controls.Add(this.panel27);
             this.panel25.Controls.Add(this.progressBar3);
@@ -1660,16 +1660,16 @@
             this.panel25.Size = new System.Drawing.Size(583, 576);
             this.panel25.TabIndex = 4;
             // 
-            // dataGridView6
+            // dslsxemnha
             // 
-            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(16, 210);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.RowHeadersWidth = 51;
-            this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(548, 315);
-            this.dataGridView6.TabIndex = 38;
+            this.dslsxemnha.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dslsxemnha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dslsxemnha.Location = new System.Drawing.Point(16, 210);
+            this.dslsxemnha.Name = "dslsxemnha";
+            this.dslsxemnha.RowHeadersWidth = 51;
+            this.dslsxemnha.RowTemplate.Height = 24;
+            this.dslsxemnha.Size = new System.Drawing.Size(548, 315);
+            this.dslsxemnha.TabIndex = 38;
             // 
             // xemlsxn
             // 
@@ -1679,6 +1679,7 @@
             this.xemlsxn.TabIndex = 41;
             this.xemlsxn.Text = "Xem";
             this.xemlsxn.UseVisualStyleBackColor = true;
+            this.xemlsxn.Click += new System.EventHandler(this.xemlsxn_Click);
             // 
             // panel27
             // 
@@ -1801,7 +1802,7 @@
             // 
             // timkiemnha
             // 
-            this.timkiemnha.Location = new System.Drawing.Point(433, 112);
+            this.timkiemnha.Location = new System.Drawing.Point(496, 112);
             this.timkiemnha.Name = "timkiemnha";
             this.timkiemnha.Size = new System.Drawing.Size(109, 30);
             this.timkiemnha.TabIndex = 37;
@@ -2502,7 +2503,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dslsxemnha)).EndInit();
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
             this.panel26.ResumeLayout(false);
@@ -2763,7 +2764,7 @@
         private System.Windows.Forms.TextBox khuvuc;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Button timtc;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dslsxemnha;
         private System.Windows.Forms.Button xemlsxn;
     }
 }

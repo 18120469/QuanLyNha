@@ -8,7 +8,7 @@ namespace QuanLyNha
 {
     class ConnectionString
     {
-        public static string connectionstring = @"Data Source=LAPTOP-Q3THE15I\SQLEXPRESS;Initial Catalog=QuanLyBan_ChoThueNha2020;Integrated Security=True";
+        public static string connectionstring = @"Data Source=.;Initial Catalog=VanDap2021;Integrated Security=True";
 
     }
 }

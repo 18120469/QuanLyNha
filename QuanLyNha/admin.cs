@@ -158,5 +158,21 @@ namespace QuanLyNha
                 dskhtc.DataSource = data.Tables[0];
             }
         }
+
+        private void xemlsxn_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+            {
+                DataSet data = new DataSet();
+                string query = "exec XemLichSuXemNha "+ manha.Text;
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+                adapter.Fill(data);
+                connection.Close();
+                dslsxemnha.DataSource = data.Tables[0];
+            }
+        }
     }
 }
