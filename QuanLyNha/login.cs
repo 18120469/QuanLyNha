@@ -22,10 +22,10 @@ namespace QuanLyNha
         {
             if (typeuser(username.Text, password.Text) == 0)
                 MessageBox.Show("tên tài khoản và mật khẩu không chính xác", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            if (typeuser(username.Text, password.Text) == 1)
+            if (typeuser(username.Text, password.Text) == 3)
             {
                 string makhachhang ;
-                string query = "select MaKhachHang from KhachHang where username = '" + username.Text + "'";
+                string query = "select MaKhachHang from KhachHang where TenTaiKhoan = '" + username.Text + "'";
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
                 {
                     connection.Open();
@@ -38,7 +38,7 @@ namespace QuanLyNha
                 khachhang.ShowDialog();
                 this.Close();
             }
-            if (typeuser(username.Text, password.Text) == 2)
+            if (typeuser(username.Text, password.Text) == 4)
             {
                 string machunha;
                 string query = "select MaChuNha from ChuNha where TenTaiKhoan = '" + username.Text + "'";
@@ -54,7 +54,7 @@ namespace QuanLyNha
                 chunha.ShowDialog();
                 this.Close();
             }
-            if (typeuser(username.Text, password.Text) == 3)
+            if (typeuser(username.Text, password.Text) == 2)
             {
                 string machunha;
                 string query = "select MaNhanVien from NhanVien where TenTaiKhoan = '" + username.Text + "'";
@@ -70,7 +70,7 @@ namespace QuanLyNha
                 nhanvien.ShowDialog();
                 this.Close();
             }
-            if (typeuser(username.Text, password.Text) == 4)
+            if (typeuser(username.Text, password.Text) == 1)
             {
                 this.Hide();
                 Form ad = new admin("1");

@@ -246,13 +246,15 @@
             this.bangtieuchi = new System.Windows.Forms.DataGridView();
             this.xemtieuchi = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.dangxuat = new System.Windows.Forms.Button();
             this.fix = new System.Windows.Forms.Button();
             this.label80 = new System.Windows.Forms.Label();
             this.manhaxemls = new System.Windows.Forms.TextBox();
             this.xemls = new System.Windows.Forms.Button();
             this.label77 = new System.Windows.Forms.Label();
             this.banglsxemnha = new System.Windows.Forms.DataGridView();
-            this.dangxuat = new System.Windows.Forms.Button();
+            this.slkh = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
             this.tpAdmin.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -2296,6 +2298,8 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.slkh);
+            this.tabPage7.Controls.Add(this.label53);
             this.tabPage7.Controls.Add(this.dskhtc);
             this.tabPage7.Controls.Add(this.label81);
             this.tabPage7.Controls.Add(this.khuvuc);
@@ -2365,7 +2369,7 @@
             // soluongtieuchi
             // 
             this.soluongtieuchi.Enabled = false;
-            this.soluongtieuchi.Location = new System.Drawing.Point(132, 529);
+            this.soluongtieuchi.Location = new System.Drawing.Point(132, 534);
             this.soluongtieuchi.Name = "soluongtieuchi";
             this.soluongtieuchi.Size = new System.Drawing.Size(74, 27);
             this.soluongtieuchi.TabIndex = 3;
@@ -2373,7 +2377,7 @@
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(19, 537);
+            this.label76.Location = new System.Drawing.Point(19, 542);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(83, 19);
             this.label76.TabIndex = 2;
@@ -2427,6 +2431,17 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Lịch Sử Xem Nhà";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // dangxuat
+            // 
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(6, 41);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(137, 29);
+            this.dangxuat.TabIndex = 41;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
             // 
             // fix
             // 
@@ -2487,16 +2502,22 @@
             this.banglsxemnha.Size = new System.Drawing.Size(864, 370);
             this.banglsxemnha.TabIndex = 3;
             // 
-            // dangxuat
+            // slkh
             // 
-            this.dangxuat.AutoSize = true;
-            this.dangxuat.Location = new System.Drawing.Point(6, 41);
-            this.dangxuat.Name = "dangxuat";
-            this.dangxuat.Size = new System.Drawing.Size(137, 29);
-            this.dangxuat.TabIndex = 41;
-            this.dangxuat.Text = "Đăng Xuất";
-            this.dangxuat.UseVisualStyleBackColor = true;
-            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
+            this.slkh.Enabled = false;
+            this.slkh.Location = new System.Drawing.Point(796, 534);
+            this.slkh.Name = "slkh";
+            this.slkh.Size = new System.Drawing.Size(74, 27);
+            this.slkh.TabIndex = 13;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(683, 542);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(83, 19);
+            this.label53.TabIndex = 12;
+            this.label53.Text = "Số Lượng";
             // 
             // admin
             // 
@@ -2822,5 +2843,7 @@
         private System.Windows.Forms.RadioButton khongcontrong;
         private System.Windows.Forms.Button fix;
         private System.Windows.Forms.Button dangxuat;
+        private System.Windows.Forms.TextBox slkh;
+        private System.Windows.Forms.Label label53;
     }
 }

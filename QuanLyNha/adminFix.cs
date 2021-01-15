@@ -170,16 +170,22 @@ namespace QuanLyNha
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
             {
+                DataTable table = new DataTable();
                 DataSet data = new DataSet();
-                string query = "exec ThongKeKhachHangTheoTieuChi1";
+                string query = "exec ThongKeKhachHangTheoTieuChi1 @khuvuc";
                 connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
-                //command.Parameters.AddWithValue("@khuvuc", khuvuc.Text);
+                SqlCommand command2 = new SqlCommand(query, connection);
+                command2.Parameters.AddWithValue("@khuvuc", khuvuc.Text);
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = command;
+                adapter.SelectCommand = command2;
                 adapter.Fill(data);
                 connection.Close();
                 dskhtc.DataSource = data.Tables[0];
+                table = data.Tables[1];
+                foreach (DataRow row in table.Rows)
+                {
+                    slkh.Text = row["SoLuongKhachHang"].ToString();
+                }
             }
         }
 
