@@ -98,6 +98,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.danhsachnha = new System.Windows.Forms.DataGridView();
             this.tabThongtincanhan = new System.Windows.Forms.TabPage();
+            this.chuafix = new System.Windows.Forms.Button();
             this.groupBoxTTTK = new System.Windows.Forms.GroupBox();
             this.btnSua2CN = new System.Windows.Forms.Button();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -114,7 +115,7 @@
             this.labelSDTCN = new System.Windows.Forms.Label();
             this.labelDiaChi = new System.Windows.Forms.Label();
             this.labelTenCN = new System.Windows.Forms.Label();
-            this.chuafix = new System.Windows.Forms.Button();
+            this.dangxuat = new System.Windows.Forms.Button();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
@@ -807,6 +808,7 @@
             // 
             // tabThongtincanhan
             // 
+            this.tabThongtincanhan.Controls.Add(this.dangxuat);
             this.tabThongtincanhan.Controls.Add(this.chuafix);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTTK);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTCN);
@@ -817,6 +819,17 @@
             this.tabThongtincanhan.TabIndex = 3;
             this.tabThongtincanhan.Text = "Thông tin cá nhân";
             this.tabThongtincanhan.UseVisualStyleBackColor = true;
+            // 
+            // chuafix
+            // 
+            this.chuafix.AutoSize = true;
+            this.chuafix.Location = new System.Drawing.Point(6, 6);
+            this.chuafix.Name = "chuafix";
+            this.chuafix.Size = new System.Drawing.Size(180, 29);
+            this.chuafix.TabIndex = 42;
+            this.chuafix.Text = "Chuyển sang chưa fix";
+            this.chuafix.UseVisualStyleBackColor = true;
+            this.chuafix.Click += new System.EventHandler(this.chuafix_Click);
             // 
             // groupBoxTTTK
             // 
@@ -964,16 +977,16 @@
             this.labelTenCN.TabIndex = 0;
             this.labelTenCN.Text = "Tên chủ nhà";
             // 
-            // chuafix
+            // dangxuat
             // 
-            this.chuafix.AutoSize = true;
-            this.chuafix.Location = new System.Drawing.Point(564, 6);
-            this.chuafix.Name = "chuafix";
-            this.chuafix.Size = new System.Drawing.Size(180, 29);
-            this.chuafix.TabIndex = 42;
-            this.chuafix.Text = "Chuyển sang chưa fix";
-            this.chuafix.UseVisualStyleBackColor = true;
-            this.chuafix.Click += new System.EventHandler(this.chuafix_Click);
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(6, 41);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(180, 29);
+            this.dangxuat.TabIndex = 43;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
             // 
             // ChuNhaFix
             // 
@@ -1098,5 +1111,6 @@
         private System.Windows.Forms.TextBox dnloainha;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button chuafix;
+        private System.Windows.Forms.Button dangxuat;
     }
 }

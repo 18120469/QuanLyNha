@@ -213,5 +213,13 @@ namespace QuanLyNha
             khachhang.ShowDialog();
             this.Close();
         }
+
+        private void dangxuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form lg = new login();
+            lg.ShowDialog();
+            this.Close();
+        }
     }
 }

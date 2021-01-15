@@ -41,7 +41,7 @@ namespace QuanLyNha
 
         private void timkiemhopdong_Click(object sender, EventArgs e)
         {
-            if (hopdongban.Checked == true )
+            if (hopdongthue.Checked == true )
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
                 {
                     DataTable table = new DataTable();
@@ -62,7 +62,7 @@ namespace QuanLyNha
                         tongsohopdong.Text = row["SoLuongHopDong"].ToString();
                     }
                 }
-            if (hopdongthue.Checked == true)
+            if (hopdongban.Checked == true)
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
                 {
                     DataTable table = new DataTable();
@@ -204,6 +204,14 @@ namespace QuanLyNha
             this.Hide();
             Form adm = new admin(maadmin);
             adm.ShowDialog();
+            this.Close();
+        }
+
+        private void dangxuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form lg = new login();
+            lg.ShowDialog();
             this.Close();
         }
     }

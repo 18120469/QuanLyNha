@@ -98,6 +98,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.danhsachnha = new System.Windows.Forms.DataGridView();
             this.tabThongtincanhan = new System.Windows.Forms.TabPage();
+            this.fix = new System.Windows.Forms.Button();
             this.groupBoxTTTK = new System.Windows.Forms.GroupBox();
             this.btnSua2CN = new System.Windows.Forms.Button();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -114,7 +115,7 @@
             this.labelSDTCN = new System.Windows.Forms.Label();
             this.labelDiaChi = new System.Windows.Forms.Label();
             this.labelTenCN = new System.Windows.Forms.Label();
-            this.fix = new System.Windows.Forms.Button();
+            this.dangxuat = new System.Windows.Forms.Button();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
@@ -136,7 +137,7 @@
             this.tabDangTin.Controls.Add(this.tabLSGD);
             this.tabDangTin.Controls.Add(this.tabQLNhaDang);
             this.tabDangTin.Controls.Add(this.tabThongtincanhan);
-            this.tabDangTin.Location = new System.Drawing.Point(12, 33);
+            this.tabDangTin.Location = new System.Drawing.Point(12, 29);
             this.tabDangTin.Name = "tabDangTin";
             this.tabDangTin.SelectedIndex = 0;
             this.tabDangTin.Size = new System.Drawing.Size(1410, 574);
@@ -807,6 +808,7 @@
             // 
             // tabThongtincanhan
             // 
+            this.tabThongtincanhan.Controls.Add(this.dangxuat);
             this.tabThongtincanhan.Controls.Add(this.fix);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTTK);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTCN);
@@ -817,6 +819,17 @@
             this.tabThongtincanhan.TabIndex = 3;
             this.tabThongtincanhan.Text = "Thông tin cá nhân";
             this.tabThongtincanhan.UseVisualStyleBackColor = true;
+            // 
+            // fix
+            // 
+            this.fix.AutoSize = true;
+            this.fix.Location = new System.Drawing.Point(6, 3);
+            this.fix.Name = "fix";
+            this.fix.Size = new System.Drawing.Size(137, 29);
+            this.fix.TabIndex = 40;
+            this.fix.Text = "Chuyển sang fix";
+            this.fix.UseVisualStyleBackColor = true;
+            this.fix.Click += new System.EventHandler(this.fix_Click);
             // 
             // groupBoxTTTK
             // 
@@ -964,16 +977,16 @@
             this.labelTenCN.TabIndex = 0;
             this.labelTenCN.Text = "Tên chủ nhà";
             // 
-            // fix
+            // dangxuat
             // 
-            this.fix.AutoSize = true;
-            this.fix.Location = new System.Drawing.Point(597, 50);
-            this.fix.Name = "fix";
-            this.fix.Size = new System.Drawing.Size(137, 29);
-            this.fix.TabIndex = 40;
-            this.fix.Text = "Chuyển sang fix";
-            this.fix.UseVisualStyleBackColor = true;
-            this.fix.Click += new System.EventHandler(this.fix_Click);
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(6, 38);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(137, 29);
+            this.dangxuat.TabIndex = 42;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
             // 
             // ChuNha
             // 
@@ -1098,5 +1111,6 @@
         private System.Windows.Forms.TextBox dnloainha;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button fix;
+        private System.Windows.Forms.Button dangxuat;
     }
 }

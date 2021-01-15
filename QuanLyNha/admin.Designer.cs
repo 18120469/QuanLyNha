@@ -252,6 +252,7 @@
             this.xemls = new System.Windows.Forms.Button();
             this.label77 = new System.Windows.Forms.Label();
             this.banglsxemnha = new System.Windows.Forms.DataGridView();
+            this.dangxuat = new System.Windows.Forms.Button();
             this.tpAdmin.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -2412,6 +2413,7 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.dangxuat);
             this.tabPage8.Controls.Add(this.fix);
             this.tabPage8.Controls.Add(this.label80);
             this.tabPage8.Controls.Add(this.manhaxemls);
@@ -2429,7 +2431,7 @@
             // fix
             // 
             this.fix.AutoSize = true;
-            this.fix.Location = new System.Drawing.Point(346, 103);
+            this.fix.Location = new System.Drawing.Point(6, 6);
             this.fix.Name = "fix";
             this.fix.Size = new System.Drawing.Size(137, 29);
             this.fix.TabIndex = 40;
@@ -2484,6 +2486,17 @@
             this.banglsxemnha.RowTemplate.Height = 24;
             this.banglsxemnha.Size = new System.Drawing.Size(864, 370);
             this.banglsxemnha.TabIndex = 3;
+            // 
+            // dangxuat
+            // 
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(6, 41);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(137, 29);
+            this.dangxuat.TabIndex = 41;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
             // 
             // admin
             // 
@@ -2808,5 +2821,6 @@
         private System.Windows.Forms.RadioButton controng;
         private System.Windows.Forms.RadioButton khongcontrong;
         private System.Windows.Forms.Button fix;
+        private System.Windows.Forms.Button dangxuat;
     }
 }
