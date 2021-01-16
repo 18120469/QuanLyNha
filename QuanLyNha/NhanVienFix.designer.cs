@@ -128,7 +128,6 @@
             this.danhsachhopdong = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.chuafix = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -158,7 +157,9 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dangxuat = new System.Windows.Forms.Button();
+            this.chuafix = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bangtieuchi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsnha)).BeginInit();
@@ -180,6 +181,7 @@
             this.tabPage4.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox3
@@ -274,6 +276,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, -1);
             this.tabControl1.Name = "tabControl1";
@@ -1144,8 +1147,6 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.dangxuat);
-            this.tabPage4.Controls.Add(this.chuafix);
             this.tabPage4.Controls.Add(this.panel9);
             this.tabPage4.Controls.Add(this.panel3);
             this.tabPage4.Location = new System.Drawing.Point(4, 28);
@@ -1155,17 +1156,6 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Thông Tin";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // chuafix
-            // 
-            this.chuafix.AutoSize = true;
-            this.chuafix.Location = new System.Drawing.Point(6, 12);
-            this.chuafix.Name = "chuafix";
-            this.chuafix.Size = new System.Drawing.Size(180, 29);
-            this.chuafix.TabIndex = 42;
-            this.chuafix.Text = "Chuyển sang chưa fix";
-            this.chuafix.UseVisualStyleBackColor = true;
-            this.chuafix.Click += new System.EventHandler(this.chuafix_Click);
             // 
             // panel9
             // 
@@ -1440,16 +1430,39 @@
             this.label36.TabIndex = 24;
             this.label36.Text = "số điện thoại";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.dangxuat);
+            this.tabPage5.Controls.Add(this.chuafix);
+            this.tabPage5.Location = new System.Drawing.Point(4, 28);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1365, 539);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Cài Đặt";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // dangxuat
             // 
             this.dangxuat.AutoSize = true;
-            this.dangxuat.Location = new System.Drawing.Point(8, 47);
+            this.dangxuat.Location = new System.Drawing.Point(594, 101);
             this.dangxuat.Name = "dangxuat";
-            this.dangxuat.Size = new System.Drawing.Size(178, 29);
-            this.dangxuat.TabIndex = 43;
+            this.dangxuat.Size = new System.Drawing.Size(226, 29);
+            this.dangxuat.TabIndex = 45;
             this.dangxuat.Text = "Đăng Xuất";
             this.dangxuat.UseVisualStyleBackColor = true;
             this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
+            // 
+            // chuafix
+            // 
+            this.chuafix.AutoSize = true;
+            this.chuafix.Location = new System.Drawing.Point(592, 46);
+            this.chuafix.Name = "chuafix";
+            this.chuafix.Size = new System.Drawing.Size(228, 29);
+            this.chuafix.TabIndex = 44;
+            this.chuafix.Text = "Chuyển sang chưa fix";
+            this.chuafix.UseVisualStyleBackColor = true;
+            this.chuafix.Click += new System.EventHandler(this.chuafix_Click);
             // 
             // NhanVienFix
             // 
@@ -1488,11 +1501,12 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.danhsachhopdong)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1627,7 +1641,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView lsxemnha;
         private System.Windows.Forms.TextBox nhanxetls;
-        private System.Windows.Forms.Button chuafix;
+        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button dangxuat;
+        private System.Windows.Forms.Button chuafix;
     }
 }

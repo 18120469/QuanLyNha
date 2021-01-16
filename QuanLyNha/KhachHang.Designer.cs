@@ -76,8 +76,6 @@
             this.lbht = new System.Windows.Forms.Label();
             this.lbNgayGiaoDich = new System.Windows.Forms.Label();
             this.tabPageQuanLyThongTin = new System.Windows.Forms.TabPage();
-            this.dangxuat = new System.Windows.Forms.Button();
-            this.fix = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.buttonSuaThongTin = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
@@ -96,6 +94,9 @@
             this.tentaikhoan = new System.Windows.Forms.TextBox();
             this.matkhau = new System.Windows.Forms.TextBox();
             this.buttonSuaTaiKhoan = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dangxuat = new System.Windows.Forms.Button();
+            this.fix = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabTrangChu.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -113,6 +114,7 @@
             this.tabPageQuanLyThongTin.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonDKXemNha
@@ -132,6 +134,7 @@
             this.tabControl1.Controls.Add(this.tabQuanLyThongTin);
             this.tabControl1.Controls.Add(this.lichsugiaodich);
             this.tabControl1.Controls.Add(this.tabPageQuanLyThongTin);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -590,8 +593,6 @@
             // 
             // tabPageQuanLyThongTin
             // 
-            this.tabPageQuanLyThongTin.Controls.Add(this.dangxuat);
-            this.tabPageQuanLyThongTin.Controls.Add(this.fix);
             this.tabPageQuanLyThongTin.Controls.Add(this.groupBox5);
             this.tabPageQuanLyThongTin.Controls.Add(this.groupBox4);
             this.tabPageQuanLyThongTin.Location = new System.Drawing.Point(4, 25);
@@ -601,28 +602,6 @@
             this.tabPageQuanLyThongTin.TabIndex = 4;
             this.tabPageQuanLyThongTin.Text = "Quản lý thông tin tài khoản";
             this.tabPageQuanLyThongTin.UseVisualStyleBackColor = true;
-            // 
-            // dangxuat
-            // 
-            this.dangxuat.AutoSize = true;
-            this.dangxuat.Location = new System.Drawing.Point(6, 41);
-            this.dangxuat.Name = "dangxuat";
-            this.dangxuat.Size = new System.Drawing.Size(137, 29);
-            this.dangxuat.TabIndex = 42;
-            this.dangxuat.Text = "Đăng Xuất";
-            this.dangxuat.UseVisualStyleBackColor = true;
-            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
-            // 
-            // fix
-            // 
-            this.fix.AutoSize = true;
-            this.fix.Location = new System.Drawing.Point(6, 6);
-            this.fix.Name = "fix";
-            this.fix.Size = new System.Drawing.Size(137, 29);
-            this.fix.TabIndex = 40;
-            this.fix.Text = "Chuyển sang fix";
-            this.fix.UseVisualStyleBackColor = true;
-            this.fix.Click += new System.EventHandler(this.fix_Click);
             // 
             // groupBox5
             // 
@@ -788,6 +767,40 @@
             this.buttonSuaTaiKhoan.Text = "Sửa";
             this.buttonSuaTaiKhoan.UseVisualStyleBackColor = true;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dangxuat);
+            this.tabPage1.Controls.Add(this.fix);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1262, 614);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "Cài Đặt";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dangxuat
+            // 
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(562, 81);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(160, 29);
+            this.dangxuat.TabIndex = 44;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
+            // 
+            // fix
+            // 
+            this.fix.AutoSize = true;
+            this.fix.Location = new System.Drawing.Point(562, 46);
+            this.fix.Name = "fix";
+            this.fix.Size = new System.Drawing.Size(160, 29);
+            this.fix.TabIndex = 43;
+            this.fix.Text = "Chuyển sang fix";
+            this.fix.UseVisualStyleBackColor = true;
+            this.fix.Click += new System.EventHandler(this.fix_Click);
+            // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -816,11 +829,12 @@
             this.lichsugiaodich.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPageQuanLyThongTin.ResumeLayout(false);
-            this.tabPageQuanLyThongTin.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -892,8 +906,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox stttc;
         private System.Windows.Forms.Label qqq;
-        private System.Windows.Forms.Button fix;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button dangxuat;
+        private System.Windows.Forms.Button fix;
     }
 }
 

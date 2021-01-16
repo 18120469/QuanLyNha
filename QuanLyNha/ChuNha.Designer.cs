@@ -98,8 +98,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.danhsachnha = new System.Windows.Forms.DataGridView();
             this.tabThongtincanhan = new System.Windows.Forms.TabPage();
-            this.dangxuat = new System.Windows.Forms.Button();
-            this.fix = new System.Windows.Forms.Button();
             this.groupBoxTTTK = new System.Windows.Forms.GroupBox();
             this.btnSua2CN = new System.Windows.Forms.Button();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -116,6 +114,9 @@
             this.labelSDTCN = new System.Windows.Forms.Label();
             this.labelDiaChi = new System.Windows.Forms.Label();
             this.labelTenCN = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dangxuat = new System.Windows.Forms.Button();
+            this.fix = new System.Windows.Forms.Button();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
@@ -129,6 +130,7 @@
             this.tabThongtincanhan.SuspendLayout();
             this.groupBoxTTTK.SuspendLayout();
             this.groupBoxTTCN.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabDangTin
@@ -137,6 +139,7 @@
             this.tabDangTin.Controls.Add(this.tabLSGD);
             this.tabDangTin.Controls.Add(this.tabQLNhaDang);
             this.tabDangTin.Controls.Add(this.tabThongtincanhan);
+            this.tabDangTin.Controls.Add(this.tabPage2);
             this.tabDangTin.Location = new System.Drawing.Point(12, 29);
             this.tabDangTin.Name = "tabDangTin";
             this.tabDangTin.SelectedIndex = 0;
@@ -808,8 +811,6 @@
             // 
             // tabThongtincanhan
             // 
-            this.tabThongtincanhan.Controls.Add(this.dangxuat);
-            this.tabThongtincanhan.Controls.Add(this.fix);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTTK);
             this.tabThongtincanhan.Controls.Add(this.groupBoxTTCN);
             this.tabThongtincanhan.Location = new System.Drawing.Point(4, 25);
@@ -819,28 +820,6 @@
             this.tabThongtincanhan.TabIndex = 3;
             this.tabThongtincanhan.Text = "Thông tin cá nhân";
             this.tabThongtincanhan.UseVisualStyleBackColor = true;
-            // 
-            // dangxuat
-            // 
-            this.dangxuat.AutoSize = true;
-            this.dangxuat.Location = new System.Drawing.Point(6, 38);
-            this.dangxuat.Name = "dangxuat";
-            this.dangxuat.Size = new System.Drawing.Size(137, 29);
-            this.dangxuat.TabIndex = 42;
-            this.dangxuat.Text = "Đăng Xuất";
-            this.dangxuat.UseVisualStyleBackColor = true;
-            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
-            // 
-            // fix
-            // 
-            this.fix.AutoSize = true;
-            this.fix.Location = new System.Drawing.Point(6, 3);
-            this.fix.Name = "fix";
-            this.fix.Size = new System.Drawing.Size(137, 29);
-            this.fix.TabIndex = 40;
-            this.fix.Text = "Chuyển sang fix";
-            this.fix.UseVisualStyleBackColor = true;
-            this.fix.Click += new System.EventHandler(this.fix_Click);
             // 
             // groupBoxTTTK
             // 
@@ -988,6 +967,40 @@
             this.labelTenCN.TabIndex = 0;
             this.labelTenCN.Text = "Tên chủ nhà";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dangxuat);
+            this.tabPage2.Controls.Add(this.fix);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1402, 545);
+            this.tabPage2.TabIndex = 4;
+            this.tabPage2.Text = "cài đặt";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dangxuat
+            // 
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(510, 73);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(166, 29);
+            this.dangxuat.TabIndex = 44;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
+            // 
+            // fix
+            // 
+            this.fix.AutoSize = true;
+            this.fix.Location = new System.Drawing.Point(510, 38);
+            this.fix.Name = "fix";
+            this.fix.Size = new System.Drawing.Size(166, 29);
+            this.fix.TabIndex = 43;
+            this.fix.Text = "Chuyển sang fix";
+            this.fix.UseVisualStyleBackColor = true;
+            this.fix.Click += new System.EventHandler(this.fix_Click);
+            // 
             // ChuNha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1013,11 +1026,12 @@
             this.groupBoxThongTinNhaDang.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.danhsachnha)).EndInit();
             this.tabThongtincanhan.ResumeLayout(false);
-            this.tabThongtincanhan.PerformLayout();
             this.groupBoxTTTK.ResumeLayout(false);
             this.groupBoxTTTK.PerformLayout();
             this.groupBoxTTCN.ResumeLayout(false);
             this.groupBoxTTCN.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1110,7 +1124,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox dnloainha;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button fix;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button dangxuat;
+        private System.Windows.Forms.Button fix;
     }
 }
