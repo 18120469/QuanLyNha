@@ -110,7 +110,18 @@ namespace QuanLyNha
 
         private void buttonDKXemNha_Click(object sender, EventArgs e)
         {
-
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionstring))
+            {
+                string query = "exec YeuCauDiXemNha1 '" + manhadk.Text + "'";
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                int ketqua = (int)command.ExecuteScalar();
+                connection.Close();
+                if (ketqua == 0)
+                    MessageBox.Show("không Thành Công");
+                if (ketqua == 1)
+                    MessageBox.Show("thành công");
+            }
         }
         
         private void buttonSuaTieuChi_Click(object sender, EventArgs e)

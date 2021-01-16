@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.buttonDKXemNha = new System.Windows.Forms.Button();
-            this.buttonDKMuaNha = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTrangChu = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@
             this.lbht = new System.Windows.Forms.Label();
             this.lbNgayGiaoDich = new System.Windows.Forms.Label();
             this.tabPageQuanLyThongTin = new System.Windows.Forms.TabPage();
+            this.dangxuat = new System.Windows.Forms.Button();
             this.chuafix = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.buttonSuaThongTin = new System.Windows.Forms.Button();
@@ -96,7 +96,6 @@
             this.tentaikhoan = new System.Windows.Forms.TextBox();
             this.matkhau = new System.Windows.Forms.TextBox();
             this.buttonSuaTaiKhoan = new System.Windows.Forms.Button();
-            this.dangxuat = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabTrangChu.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -126,15 +125,6 @@
             this.buttonDKXemNha.UseVisualStyleBackColor = true;
             this.buttonDKXemNha.Click += new System.EventHandler(this.buttonDKXemNha_Click);
             // 
-            // buttonDKMuaNha
-            // 
-            this.buttonDKMuaNha.Location = new System.Drawing.Point(960, 419);
-            this.buttonDKMuaNha.Name = "buttonDKMuaNha";
-            this.buttonDKMuaNha.Size = new System.Drawing.Size(196, 41);
-            this.buttonDKMuaNha.TabIndex = 5;
-            this.buttonDKMuaNha.Text = "Đăng ký mua nhà";
-            this.buttonDKMuaNha.UseVisualStyleBackColor = true;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabTrangChu);
@@ -155,7 +145,6 @@
             this.tabTrangChu.Controls.Add(this.buttonNVPT);
             this.tabTrangChu.Controls.Add(this.groupBox2);
             this.tabTrangChu.Controls.Add(this.groupBox1);
-            this.tabTrangChu.Controls.Add(this.buttonDKMuaNha);
             this.tabTrangChu.Controls.Add(this.buttonDKXemNha);
             this.tabTrangChu.Location = new System.Drawing.Point(4, 25);
             this.tabTrangChu.Name = "tabTrangChu";
@@ -184,7 +173,7 @@
             // 
             // buttonNVPT
             // 
-            this.buttonNVPT.Location = new System.Drawing.Point(960, 500);
+            this.buttonNVPT.Location = new System.Drawing.Point(960, 529);
             this.buttonNVPT.Name = "buttonNVPT";
             this.buttonNVPT.Size = new System.Drawing.Size(196, 44);
             this.buttonNVPT.TabIndex = 6;
@@ -613,6 +602,17 @@
             this.tabPageQuanLyThongTin.Text = "Quản lý thông tin tài khoản";
             this.tabPageQuanLyThongTin.UseVisualStyleBackColor = true;
             // 
+            // dangxuat
+            // 
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(6, 41);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(180, 29);
+            this.dangxuat.TabIndex = 43;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
+            // 
             // chuafix
             // 
             this.chuafix.AutoSize = true;
@@ -788,17 +788,6 @@
             this.buttonSuaTaiKhoan.Text = "Sửa";
             this.buttonSuaTaiKhoan.UseVisualStyleBackColor = true;
             // 
-            // dangxuat
-            // 
-            this.dangxuat.AutoSize = true;
-            this.dangxuat.Location = new System.Drawing.Point(6, 41);
-            this.dangxuat.Name = "dangxuat";
-            this.dangxuat.Size = new System.Drawing.Size(180, 29);
-            this.dangxuat.TabIndex = 43;
-            this.dangxuat.Text = "Đăng Xuất";
-            this.dangxuat.UseVisualStyleBackColor = true;
-            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
-            // 
             // KhachHangFix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -838,7 +827,6 @@
 
         #endregion
         private System.Windows.Forms.Button buttonDKXemNha;
-        private System.Windows.Forms.Button buttonDKMuaNha;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabTrangChu;
         private System.Windows.Forms.Button buttonNVPT;

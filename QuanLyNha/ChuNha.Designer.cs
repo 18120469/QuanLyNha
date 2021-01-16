@@ -98,6 +98,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.danhsachnha = new System.Windows.Forms.DataGridView();
             this.tabThongtincanhan = new System.Windows.Forms.TabPage();
+            this.dangxuat = new System.Windows.Forms.Button();
             this.fix = new System.Windows.Forms.Button();
             this.groupBoxTTTK = new System.Windows.Forms.GroupBox();
             this.btnSua2CN = new System.Windows.Forms.Button();
@@ -111,11 +112,10 @@
             this.btnSuattcnCn = new System.Windows.Forms.Button();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tenchunha = new System.Windows.Forms.TextBox();
             this.labelSDTCN = new System.Windows.Forms.Label();
             this.labelDiaChi = new System.Windows.Forms.Label();
             this.labelTenCN = new System.Windows.Forms.Label();
-            this.dangxuat = new System.Windows.Forms.Button();
             this.tabDangTin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_ttcoban.SuspendLayout();
@@ -426,7 +426,7 @@
             // ngayketthuc
             // 
             this.ngayketthuc.Location = new System.Drawing.Point(623, 40);
-            this.ngayketthuc.MaxDate = new System.DateTime(2021, 1, 10, 0, 0, 0, 0);
+            this.ngayketthuc.MaxDate = new System.DateTime(2022, 7, 30, 0, 0, 0, 0);
             this.ngayketthuc.Name = "ngayketthuc";
             this.ngayketthuc.Size = new System.Drawing.Size(200, 22);
             this.ngayketthuc.TabIndex = 65;
@@ -820,6 +820,17 @@
             this.tabThongtincanhan.Text = "Thông tin cá nhân";
             this.tabThongtincanhan.UseVisualStyleBackColor = true;
             // 
+            // dangxuat
+            // 
+            this.dangxuat.AutoSize = true;
+            this.dangxuat.Location = new System.Drawing.Point(6, 38);
+            this.dangxuat.Name = "dangxuat";
+            this.dangxuat.Size = new System.Drawing.Size(137, 29);
+            this.dangxuat.TabIndex = 42;
+            this.dangxuat.Text = "Đăng Xuất";
+            this.dangxuat.UseVisualStyleBackColor = true;
+            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
+            // 
             // fix
             // 
             this.fix.AutoSize = true;
@@ -909,7 +920,7 @@
             this.groupBoxTTCN.Controls.Add(this.btnSuattcnCn);
             this.groupBoxTTCN.Controls.Add(this.textBox15);
             this.groupBoxTTCN.Controls.Add(this.textBox14);
-            this.groupBoxTTCN.Controls.Add(this.textBox13);
+            this.groupBoxTTCN.Controls.Add(this.tenchunha);
             this.groupBoxTTCN.Controls.Add(this.labelSDTCN);
             this.groupBoxTTCN.Controls.Add(this.labelDiaChi);
             this.groupBoxTTCN.Controls.Add(this.labelTenCN);
@@ -943,12 +954,12 @@
             this.textBox14.Size = new System.Drawing.Size(165, 22);
             this.textBox14.TabIndex = 4;
             // 
-            // textBox13
+            // tenchunha
             // 
-            this.textBox13.Location = new System.Drawing.Point(152, 61);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(165, 22);
-            this.textBox13.TabIndex = 3;
+            this.tenchunha.Location = new System.Drawing.Point(152, 61);
+            this.tenchunha.Name = "tenchunha";
+            this.tenchunha.Size = new System.Drawing.Size(165, 22);
+            this.tenchunha.TabIndex = 3;
             // 
             // labelSDTCN
             // 
@@ -976,17 +987,6 @@
             this.labelTenCN.Size = new System.Drawing.Size(88, 17);
             this.labelTenCN.TabIndex = 0;
             this.labelTenCN.Text = "Tên chủ nhà";
-            // 
-            // dangxuat
-            // 
-            this.dangxuat.AutoSize = true;
-            this.dangxuat.Location = new System.Drawing.Point(6, 38);
-            this.dangxuat.Name = "dangxuat";
-            this.dangxuat.Size = new System.Drawing.Size(137, 29);
-            this.dangxuat.TabIndex = 42;
-            this.dangxuat.Text = "Đăng Xuất";
-            this.dangxuat.UseVisualStyleBackColor = true;
-            this.dangxuat.Click += new System.EventHandler(this.dangxuat_Click);
             // 
             // ChuNha
             // 
@@ -1089,7 +1089,7 @@
         private System.Windows.Forms.Button btnSuattcnCn;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox tenchunha;
         private System.Windows.Forms.Label labelSDTCN;
         private System.Windows.Forms.Label labelDiaChi;
         private System.Windows.Forms.Label labelTenCN;

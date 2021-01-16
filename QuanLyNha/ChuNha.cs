@@ -25,6 +25,7 @@ namespace QuanLyNha
         }
         public void load()
         {
+            tenchunha.Text = machunha;
             cbloai.Items.Add("Thuê");
             cbloai.Items.Add("Mua");
             danhsachnha.DataSource = nha;
